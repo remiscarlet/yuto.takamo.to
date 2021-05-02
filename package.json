@@ -1,0 +1,9 @@
+{
+  "name": "yuto.takamo.to",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:remiscarlet/yuto.takamo.to.git",
+  "author": "'remiscarlet' <'remilia@scarl.et'>",
+  "license": "MIT",
+  "private": false
+}
