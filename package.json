@@ -1,9 +1,30 @@
 {
   "name": "yuto.takamo.to",
   "version": "0.0.1",
-  "main": "index.js",
   "repository": "git@github.com:remiscarlet/yuto.takamo.to.git",
   "author": "'remiscarlet' <'remilia@scarl.et'>",
   "license": "MIT",
-  "private": false
+  "private": true,
+  "scripts": {
+    "build": "webpack --config webpack.config.js --mode=production"
+  },
+  "dependencies": {
+    "copy-webpack-plugin": "^8.1.1",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "markdown-it": "^12.0.6",
+    "markdown-it-anchor": "^7.1.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.168",
+    "css-loader": "^5.2.4",
+    "html-webpack-plugin": "^5.3.1",
+    "sass": "^1.32.12",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^9.1.1",
+    "typescript": "^4.2.4",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0"
+  }
 }
