@@ -6,7 +6,11 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "webpack --config webpack.config.js --mode=production"
+    "build": "webpack --config webpack.config.js --mode=production",
+    "lint:js": "yarn eslint . --ext .js,.jsx,.ts,.tsx",
+    "lintfix:js": "yarn eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "format-check": "prettier --check \"**/*.(md|yaml|json)\"",
+    "format": "prettier --write \"**/*.(md|yaml|json)\""
   },
   "dependencies": {
     "copy-webpack-plugin": "^8.1.1",
@@ -16,9 +20,26 @@
     "markdown-it-anchor": "^7.1.0"
   },
   "devDependencies": {
+    "@types/copy-webpack-plugin": "^8.0.0",
     "@types/lodash": "^4.14.168",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/parser": "^4.22.0",
     "css-loader": "^5.2.4",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-config-standard": "^16.0.1",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-standard": "^4.0.2",
+    "eslint-plugin-vue": "^7.1.0",
     "html-webpack-plugin": "^5.3.1",
+    "prettier": "^2.1.2",
     "sass": "^1.32.12",
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",

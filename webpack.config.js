@@ -1,8 +1,8 @@
-const path = require('path');
-const CopyPlugin = require("copy-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+import path = require('path');
+import CopyPlugin = require('copy-webpack-plugin');
+import HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = (env, opts) => {
+module.exports = () => { // (env, opts) => {
   return {
     entry: './src/index.ts',
     module: {
@@ -27,7 +27,7 @@ module.exports = (env, opts) => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        title: "Remilia is best 2hu"
+        title: 'Remilia is best 2hu',
       }),
       new CopyPlugin({
         patterns: [
@@ -40,5 +40,5 @@ module.exports = (env, opts) => {
       path: path.resolve(__dirname, 'dist'),
       clean: true,
     },
-  }
+  };
 };

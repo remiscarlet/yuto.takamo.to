@@ -11,6 +11,11 @@ $bright: #A8A6A1;
 $dark: #7C7C7E;
 $darkest: #515152;
 
-.body {
+body {
     background-color: $darkest;
+}
+
+.foo {
+    font-family: $font_headings;
+    color: $lightest;
 }
