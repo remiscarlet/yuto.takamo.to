@@ -1,5 +1,13 @@
 # [yuto.takamo.to](https://yuto.takamo.to)
 
-An excuse to finally learn yarn/webpack/vue.
+Personal portfolio site thing idk
 
-This will be a personal portfolio site.
+## Stuff
+
+Stuff I used for the first time:
+- Yarn/NPM
+- Vue
+- Typescript
+- Webpack (What a rabbithole)
+
+Good stuff.
