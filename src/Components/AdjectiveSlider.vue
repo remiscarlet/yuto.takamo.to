@@ -17,6 +17,7 @@ export default class AdjectiveSlider extends Vue {
     "An Ambitious",
     "A Tenacious",
     "A Self-driven",
+    "A Sleepy",
   ];
 
   adjectiveIndex: number = 0;
@@ -30,12 +31,12 @@ export default class AdjectiveSlider extends Vue {
   }
 
   incrementIndex() {
-    let maxIdx = this.adjectiveList.length - 1;
+    let maxIdx = this.adjectiveList.length;
     this.adjectiveIndex = (this.adjectiveIndex + 1) % maxIdx;
   }
 
   created() {
-    setInterval(this.nextAdj, 3000);
+    setInterval(this.nextAdj, 5000);
   }
 };
 </script>
@@ -45,11 +46,11 @@ export default class AdjectiveSlider extends Vue {
 }
 
 .slide-leave-active {
-  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  transition: all 1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
 
 .slide-enter, .slide-leave-to {
-  transform: translateX(10px);
+  transform: translateX(15px);
   opacity: 0;
 }
 
