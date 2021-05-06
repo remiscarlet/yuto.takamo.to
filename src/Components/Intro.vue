@@ -13,7 +13,7 @@
     </b-row>
     <b-row class="my-5" align-v="center">
       <b-col>
-        <b-img src="../../content/images/profile.jpg" fluid alt="Remi cute"></b-img>
+        <b-img src="../../assets/images/profile.jpg" fluid alt="Remi cute"></b-img>
       </b-col>
       <b-col>
         <h4 class="text-left">Coding Isn't All I Do</h4>
