@@ -1,10 +1,7 @@
-import * as path from 'path';
 import webpack from 'webpack';
-import merge from 'webpack-merge';
+import { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-server';
 
 import commonConfig from './webpack.common';
-
-import { Configuration as WebpackDevServerConfiguration } from "webpack-dev-server";
 
 // Type weirdness from webpack-dev-server. Workaround by explicitly merging types.
 // https://github.com/survivejs/webpack-merge/issues/141
@@ -20,9 +17,9 @@ const config: Configuration = {
       children: false,
     },
     compress: true,
-    public: "remi.takamo.to",
-    port: 8001
-  }
+    public: 'remi.takamo.to',
+    port: 8001,
+  },
 };
 
 export default config;

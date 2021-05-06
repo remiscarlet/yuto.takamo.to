@@ -1,11 +1,13 @@
+// @ts-nocheck
+// Need to figure out how to fix 'Unsafe assignment of an `any` value' errors
 import * as path from 'path';
 import * as webpack from 'webpack';
 
-//import * as VueLoaderPlugin from 'vue-loader';
-const { VueLoaderPlugin } = require('vue-loader');
 import * as CopyPlugin from 'copy-webpack-plugin';
 import * as HtmlWebpackPlugin from 'html-webpack-plugin';
 import * as MiniCssExtractPlugin from 'mini-css-extract-plugin';
+
+const { VueLoaderPlugin } = require('vue-loader');
 
 const config: webpack.Configuration = {
   entry: './src/index.ts',
@@ -26,15 +28,15 @@ const config: webpack.Configuration = {
         loader: 'vue-loader',
         options: {
           img: 'src',
-        }
+        },
       },
     ],
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '...'],
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
-    }
+      'vue$': 'vue/dist/vue.esm.js',
+    },
   },
   plugins: [
     new VueLoaderPlugin(),
