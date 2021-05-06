@@ -23,7 +23,10 @@ const config: webpack.Configuration = {
       },
       {
         test: /\.vue$/,
-        loader: 'vue-loader'
+        loader: 'vue-loader',
+        options: {
+          img: 'src',
+        }
       },
     ],
   },
@@ -45,12 +48,11 @@ const config: webpack.Configuration = {
         collapseInlineTagWhitespace: true,
       } : false,
     }),
-    /*
     new CopyPlugin({
       patterns: [
         { from: 'content/images/', to: 'assets/images/' },
       ],
-    }),*/
+    }),
   ],
   output: {
     filename: 'bundle.js',
