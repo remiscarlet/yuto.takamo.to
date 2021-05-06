@@ -12,6 +12,11 @@ Vue.use(IconsPlugin);
 
 import App from './App.vue';
 
+var host = "yuto.takamo.to";
+if ((host == window.location.host) && (window.location.protocol != "https:")) {
+  window.location.protocol = "https";
+}
+
 new Vue({
   render: h => h(App),
 }).$mount('#app');
