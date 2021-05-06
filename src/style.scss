@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display&family=Poppins&display=swap');
 
 
-
 $font_headings: 'Playfair Display', serif;
 $font_paragraphs: 'EB Garamond', serif;
 $font_buttons: 'EB Garamond', serif;
@@ -13,9 +12,16 @@ $bright: #A8A6A1;
 $dark: #7C7C7E;
 $darkest: #515152;
 
-$body-bg: $darkest;
+$body-bg: $dark;
 $body-color: $lightest;
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 @import 'node_modules/bootstrap-vue/src/index.scss';
 
+body {
+    font-family: $font_paragraphs;
+}
+
+h1, h2, h3, h4 {
+    font-family: $font_headings;
+}

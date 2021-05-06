@@ -14,11 +14,11 @@
         <b-img src="../../content/images/remitest.jpg" fluid alt="Remi cute"></b-img>
       </b-col>
       <b-col>
-        <h4 class="text-center">Coding Isn't All She Does</h4>
-        <p class="text-center lead">
+        <h4 class="text-left">Coding Isn't All She Does</h4>
+        <p class="text-left lead">
         I also spend copious amounts of time cooking up a storm, continuing my lifelong journey as a musician, and building connections and communities with the people I love.
         </p>
-        <p class="text-center lead">
+        <p class="text-left lead">
         I also spend too much time on games.
         </p>
       </b-col>
