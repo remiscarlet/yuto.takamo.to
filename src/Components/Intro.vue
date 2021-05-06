@@ -1,15 +1,15 @@
 <template>
   <b-container>
-    <b-row>
+    <b-row style="margin-top: 100px">
       <b-col>
-        <h4 class="text-center">An Inquisitive</h4>
-        <h2 class="text-center">Software Engineer, Creative, Huge Nerd</h2>
-        <p class="text-center lead">
+        <h3 class="text-center">An Inquisitive</h3>
+        <h1 class="text-center my-3">Software Engineer, Creative, Huge Nerd</h1>
+        <p class="text-center lead my-3">
         Sup, I’m Yuto. I’m an engineer with industry experience in web and cloud technologies, systems administration and automation, as well as a healthy interest in new and exciting technologies and ideas. I believe that the rate of change in the technology industry only accelerates as time goes on and that my love and drive for learning only serves to position me for success
         </p>
       </b-col>
     </b-row>
-    <b-row>
+    <b-row class="my-5">
       <b-col>
         <b-img src="../../content/images/remitest.jpg" fluid alt="Remi cute"></b-img>
       </b-col>

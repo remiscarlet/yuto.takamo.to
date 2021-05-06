@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display&family=Poppins&display=swap');
+@use 'fontsize-breakpoints';
 
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display&family=Poppins&display=swap');
 
 $font_headings: 'Playfair Display', serif;
 $font_paragraphs: 'EB Garamond', serif;
@@ -18,10 +19,27 @@ $body-color: $lightest;
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 @import 'node_modules/bootstrap-vue/src/index.scss';
 
+
+
 body {
     font-family: $font_paragraphs;
+    font-size: 1.25em;
 }
 
 h1, h2, h3, h4 {
     font-family: $font_headings;
+}
+
+a {
+    &:visited,&:hover {
+        color: $light;
+    }
+
+    color: $lightest;
+    text-decoration: underline;
+
+}
+
+.no-style {
+    text-decoration: none;
 }

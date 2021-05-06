@@ -2,7 +2,7 @@
   <div>
     <b-navbar v-bind:class="{'scrolled-up': isScrollingUp, 'scrolled-down': isScrollingDown}" toggleable="lg" type="dark" variant="alert">
       <b-container>
-        <b-navbar-brand href="#">Yuto Takamoto</b-navbar-brand>
+        <b-navbar-brand href="#" class="text-decoration-none">Yuto Takamoto</b-navbar-brand>
       </b-container>
     </b-navbar>
   </div>
