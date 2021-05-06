@@ -50,16 +50,7 @@ export default class AdjectiveSlider extends Vue {
 }
 
 .slide-enter, .slide-leave-to {
-  transform: translateX(15px);
+  transform: translateX(25px);
   opacity: 0;
-}
-
-$slide_distance: 25px;
-.slide-enter {
-  left: $slide_distance;
-}
-
-.slide-leave-to {
-  left: $slide_distance;
 }
 </style>
