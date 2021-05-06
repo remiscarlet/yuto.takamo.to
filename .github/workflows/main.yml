@@ -53,7 +53,7 @@ jobs:
           FOLDER: dist
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
- lint:
+   lint:
     runs-on: ubuntu-latest
 
     strategy:
@@ -86,7 +86,3 @@ jobs:
 
       - name: Run linting
         run: yarn run lint:js
-
-      - name: Run YAML verification
-        run: yarn run yaml-validate
-
