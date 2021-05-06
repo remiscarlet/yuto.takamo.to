@@ -6,6 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "start:dev": "webpack serve --hot --config webpack.dev.ts --mode=development --host 0.0.0.0",
     "build": "webpack --config webpack.prod.ts --mode=production",
     "build-dev": "webpack --config webpack.dev.ts --mode=development",
     "lint:js": "yarn eslint . --ext .js,.jsx,.ts,.tsx",

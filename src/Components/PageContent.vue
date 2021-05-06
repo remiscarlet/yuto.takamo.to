@@ -1,5 +1,8 @@
 <template>
-  <p>{{ greeting }} World!</p>
+  <div>
+    <p>{{ greeting }} World!</p>
+    <p>More stuff here</p>
+  </div>
 </template>
 
 <script lang="ts">

@@ -7,8 +7,6 @@ import * as CopyPlugin from 'copy-webpack-plugin';
 import * as HtmlWebpackPlugin from 'html-webpack-plugin';
 import * as MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
-import 'webpack-dev-server';
-
 const config: webpack.Configuration = {
   entry: './src/index.ts',
   module: {
