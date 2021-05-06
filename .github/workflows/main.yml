@@ -3,7 +3,7 @@ name: Publish yuto.takamo.to
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - '*'
       - '!README.md'
