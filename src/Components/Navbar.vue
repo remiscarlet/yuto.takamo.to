@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar v-bind:class="{'scrolled-up': isScrollingUp, 'scrolled-down': isScrollingDown}" toggleable="lg" type="dark" variant="alert">
+    <b-navbar fixed="top" v-bind:class="{'scrolled-up': isScrollingUp, 'scrolled-down': isScrollingDown}" toggleable="lg" type="dark" variant="alert">
       <b-container>
         <b-navbar-brand href="#" class="text-decoration-none">Yuto Takamoto</b-navbar-brand>
       </b-container>
@@ -15,6 +15,8 @@ export default class Navbar extends Vue {
   isScrollingUp: boolean = false;
   isScrollingDown: boolean = false;
   lastScrollTop: number = 0;
+  hideY: number = 50;
+  showY: number = 100;
 
   created() {
     window.addEventListener('scroll', this.handleScroll);
@@ -28,10 +30,10 @@ export default class Navbar extends Vue {
     console.log("Handling scroll event");
 
     let scrollTop = window.scrollY;
-    if (scrollTop < this.lastScrollTop) {
+    if (scrollTop < this.lastScrollTop && scrollTop <= this.showY) {
       this.isScrollingUp = true;
       this.isScrollingDown = false;
-    } else {
+    } else if (scrollTop >= this.hideY) {
       this.isScrollingUp = false;
       this.isScrollingDown = true;
     }
@@ -43,9 +45,9 @@ export default class Navbar extends Vue {
 
 <style scoped>
 .scrolled-down {
-  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  transform:translateY(-100%); transition: all 0.5s ease-in-out;
 }
 .scrolled-up {
-  transform:translateY(0); transition: all 0.3s ease-in-out;
+  transform:translateY(0); transition: all 0.5s ease-in-out;
 }
 </style>
