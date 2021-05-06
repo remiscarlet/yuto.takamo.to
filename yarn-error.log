@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/bin/yarn add @types/vue-class-component
+  /usr/bin/node /usr/bin/yarn add @types/vue-property-decorator
 
 PATH: 
   /home/remi/.pyenv/plugins/pyenv-virtualenv/shims:/home/remi/.pyenv/shims:/home/remi/.pyenv/bin:/home/remi/development/golang/bin:/usr/local/go/bin:/home/remi/.pyenv/plugins/pyenv-virtualenv/shims:/home/remi/.pyenv/shims:/home/remi/.pyenv/bin:/home/remi/development/golang/bin:/usr/local/go/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/remi/.local/bin:/home/remi/bin:/home/remi/.local/bin:/home/remi/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2fvue-class-component: Not found
+  Error: https://registry.yarnpkg.com/@types%2fvue-property-decorator: Not found
       at Request.params.callback [as _callback] (/usr/lib/node_modules/yarn/lib/cli.js:66987:18)
       at Request.self.callback (/usr/lib/node_modules/yarn/lib/cli.js:140748:22)
       at Request.emit (events.js:314:20)
@@ -35,6 +35,7 @@ npm manifest:
     "license": "MIT",
     "private": true,
     "scripts": {
+      "start:dev": "webpack serve --hot --config webpack.dev.ts --mode=development --host 0.0.0.0",
       "build": "webpack --config webpack.prod.ts --mode=production",
       "build-dev": "webpack --config webpack.dev.ts --mode=development",
       "lint:js": "yarn eslint . --ext .js,.jsx,.ts,.tsx",
@@ -57,7 +58,8 @@ npm manifest:
       "mini-css-extract-plugin": "^1.6.0",
       "terser-webpack-plugin": "^5.1.1",
       "vue": "^2.6.12",
-      "vue-class-component": "^7.2.6"
+      "vue-class-component": "^7.2.6",
+      "vue-property-decorator": "^9.1.2"
     },
     "devDependencies": {
       "@types/copy-webpack-plugin": "^8.0.0",
@@ -5890,6 +5892,11 @@ Lockfile:
       loader-utils "^1.1.0"
       vue-hot-reload-api "^2.3.0"
       vue-style-loader "^4.1.0"
+  
+  vue-property-decorator@^9.1.2:
+    version "9.1.2"
+    resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-9.1.2.tgz#266a2eac61ba6527e2e68a6933cfb98fddab5457"
+    integrity sha512-xYA8MkZynPBGd/w5QFJ2d/NM0z/YeegMqYTphy7NJQXbZcuU6FC6AOdUAcy4SXP+YnkerC6AfH+ldg7PDk9ESQ==
   
   vue-style-loader@^4.1.0:
     version "4.1.3"

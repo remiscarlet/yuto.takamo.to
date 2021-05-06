@@ -1,34 +1,55 @@
 <template>
     <div>
-      <b-navbar toggleable="lg" type="dark" variant="dark">
+      <b-navbar
+        v-bind:class="{'scrolled-up': isScrollingUp, 'scrolled-down': isScrollingDown}"
+        toggleable="lg"
+        type="dark"
+        variant="alert">
         <b-container>
-            <b-navbar-brand href="#">Mealzers</b-navbar-brand>
-            <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-            <b-collapse id="nav-collapse" is-nav>
-              <!-- Right aligned nav items -->
-              <b-navbar-nav class="ml-auto">
-                <b-nav-form>
-                  <b-form-input
-                    size="sm"
-                    class="mr-sm-2"
-                    placeholder="Search for a meal"
-                    ></b-form-input>
-                  <b-button
-                    size="sm"
-                    class="my-2 my-sm-0"
-                    >Search</b-button>
-                </b-nav-form>
-                <b-nav-item-dropdown right>
-                  <!-- Using 'button-content' slot -->
-                  <template slot="button-content"><em>User</em></template>
-                  <b-dropdown-item href="#">Profile</b-dropdown-item>
-                  <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-                </b-nav-item-dropdown>
-              </b-navbar-nav>
-            </b-collapse>
-          </b-container>
+          <b-navbar-brand href="#">Yuto Takamoto</b-navbar-brand>
+        </b-container>
       </b-navbar>
     </div>
 </template>
-<script>
+<script lang="ts">
+import { Component, Vue, Prop } from 'vue-property-decorator';
+
+@Component
+export default class Navbar extends Vue {
+  isScrollingUp: boolean = false;
+  isScrollingDown: boolean = false;
+  lastScrollTop: number = 0;
+
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll (event: Event) {
+    console.log("Handling scroll event");
+
+    let scrollTop = window.scrollY;
+    if (scrollTop < this.lastScrollTop) {
+      this.isScrollingUp = true;
+      this.isScrollingDown = false;
+    } else {
+      this.isScrollingUp = false;
+      this.isScrollingDown = true;
+    }
+    this.lastScrollTop = scrollTop;
+
+  }
+};
 </script>
+
+<style scoped>
+.scrolled-down {
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up {
+  transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+</style>
