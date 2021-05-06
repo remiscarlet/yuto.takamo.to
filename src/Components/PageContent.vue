@@ -1,18 +1,22 @@
 <template>
   <div>
-    <p>{{ greeting }} World!</p>
-    <p>More stuff here</p>
+    <Intro />
+    <History />
   </div>
 </template>
 
 <script lang="ts">
-module.exports = {
-  data: function () {
-    return {
-      greeting: "Hello"
-    }
+import { Component, Vue } from 'vue-property-decorator';
+import Intro from './Intro.vue';
+import History from './History.vue';
+
+@Component({
+  components: {
+    Intro,
+    History
   }
-}
+})
+export default class PageContent extends Vue { };
 </script>
 
 <style scoped>

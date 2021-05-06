@@ -1,15 +1,11 @@
 <template>
-    <div>
-      <b-navbar
-        v-bind:class="{'scrolled-up': isScrollingUp, 'scrolled-down': isScrollingDown}"
-        toggleable="lg"
-        type="dark"
-        variant="alert">
-        <b-container>
-          <b-navbar-brand href="#">Yuto Takamoto</b-navbar-brand>
-        </b-container>
-      </b-navbar>
-    </div>
+  <div>
+    <b-navbar v-bind:class="{'scrolled-up': isScrollingUp, 'scrolled-down': isScrollingDown}" toggleable="lg" type="dark" variant="alert">
+      <b-container>
+        <b-navbar-brand href="#">Yuto Takamoto</b-navbar-brand>
+      </b-container>
+    </b-navbar>
+  </div>
 </template>
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
