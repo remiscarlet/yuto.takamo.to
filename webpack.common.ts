@@ -7,6 +7,7 @@ import * as CopyPlugin from 'copy-webpack-plugin';
 import * as HtmlWebpackPlugin from 'html-webpack-plugin';
 import * as MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
+import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import { VueLoaderPlugin } from 'vue-loader';
 
 const config: webpack.Configuration = {
@@ -55,11 +56,16 @@ const config: webpack.Configuration = {
         { from: 'content/images/', to: 'assets/images/' },
       ],
     }),
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: [
+        '**/*',
+        '!CNAME'
+      ],
+    }),
   ],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true,
   },
 };
 

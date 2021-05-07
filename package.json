@@ -20,6 +20,7 @@
     "@types/terser-webpack-plugin": "^5.0.3",
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
     "copy-webpack-plugin": "^8.1.1",
     "css-minimizer-webpack-plugin": "^2.0.0",
     "html-webpack-plugin": "^5.3.1",
