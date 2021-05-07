@@ -7,7 +7,7 @@ import * as CopyPlugin from 'copy-webpack-plugin';
 import * as HtmlWebpackPlugin from 'html-webpack-plugin';
 import * as MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
-const { VueLoaderPlugin } = require('vue-loader');
+import { VueLoaderPlugin } from 'vue-loader';
 
 const config: webpack.Configuration = {
   entry: './src/index.ts',
