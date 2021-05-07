@@ -2,7 +2,8 @@
   <div>
     <b-navbar fixed="top" v-bind:class="{'scrolled-up': isScrollingUp, 'scrolled-down': isScrollingDown}" toggleable="lg" type="dark" variant="alert">
       <b-container>
-        <b-navbar-brand href="#" class="text-decoration-none">Yuto Takamoto</b-navbar-brand>
+        <b-navbar-brand href="#" class="text-decoration-none mr-5" v-on:click="changePage('home')">Yuto Takamoto</b-navbar-brand>
+        <b-nav-item v-on:click="changePage('aboutme')">About Me</b-nav-item>
       </b-container>
     </b-navbar>
   </div>
@@ -24,6 +25,10 @@ export default class Navbar extends Vue {
 
   destroyed() {
     window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  changePage(page: string) {
+    return;
   }
 
   handleScroll (event: Event) {

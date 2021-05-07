@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pageContents">
     <div v-if="page === 'home'">
       <Intro />
       <History />
@@ -30,7 +30,12 @@ export default class PageContent extends Vue {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
+.pageContents {
+  margin-top: 7em;
+}
+
 p {
   font-size: 2em;
   text-align: center;

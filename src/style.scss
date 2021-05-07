@@ -31,13 +31,13 @@ h1, h2, h3, h4 {
 }
 
 a {
-    &:visited,&:hover {
+    &:hover {
         color: $light;
     }
 
     color: $lightest;
     text-decoration: underline;
-
+    transition: 0.3s;
 }
 
 .no-style {

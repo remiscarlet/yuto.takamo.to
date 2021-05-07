@@ -10,6 +10,7 @@
   import PageContent from './Components/PageContent.vue';
   import Footer from './Components/Footer.vue';
 
+
   export default {
     name: 'navbar',
     page: 'homenot',
