@@ -59,7 +59,7 @@ const config: webpack.Configuration = {
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: [
         '**/*',
-        '!CNAME'
+        '!CNAME',
       ],
     }),
   ],
