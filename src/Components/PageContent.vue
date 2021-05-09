@@ -5,9 +5,8 @@
       <History />
       <!--MyTech (*/5 star things)/-->
     </div>
-    <div v-else-if="page === 'aboutme'">
-      <AboutMe />
-      <SideProjects />
+    <div v-else-if="page === 'projects'">
+      <Projects />
     </div>
   </div>
 </template>
@@ -16,22 +15,21 @@
 import { Component, Vue, Prop } from 'vue-property-decorator';
 import Intro from './Intro.vue';
 import History from './History.vue';
-import AboutMe from './AboutMe.vue';
+import Projects from './Projects.vue';
 
 @Component({
   components: {
     Intro,
     History,
-    AboutMe,
+    Projects,
   }
 })
 export default class PageContent extends Vue {
-  @Prop({default: 'home'}) page: string;
+  @Prop() page: string;
 };
 </script>
 
 <style lang="scss" scoped>
-
 .pageContents {
   margin-top: 7em;
 }
