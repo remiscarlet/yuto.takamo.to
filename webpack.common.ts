@@ -6,9 +6,11 @@ import * as webpack from 'webpack';
 import * as CopyPlugin from 'copy-webpack-plugin';
 import * as HtmlWebpackPlugin from 'html-webpack-plugin';
 import * as MiniCssExtractPlugin from 'mini-css-extract-plugin';
+// import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import { VueLoaderPlugin } from 'vue-loader';
+
 
 const config: webpack.Configuration = {
   entry: './src/index.ts',
@@ -23,6 +25,10 @@ const config: webpack.Configuration = {
       {
         test: /\.s?css$/i,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /\.ya?ml$/,
+        loader: 'raw-loader',
       },
       {
         test: /\.vue$/,
@@ -40,6 +46,7 @@ const config: webpack.Configuration = {
     },
   },
   plugins: [
+    // new BundleAnalyzerPlugin(),
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({

@@ -1,4 +1,4 @@
 yarn-error.log
-*.swp
+*.sw[op]
 node_modules/
 dist/
