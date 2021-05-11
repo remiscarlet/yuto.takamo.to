@@ -1,5 +1,6 @@
-build: # asdf make better later
-	yarn lint:js
+build: lint # asdf make better later
 	yarn build
 lint: # Lint all filetypes with configured linters
+	yarn format-check
 	yarn lint:js
+

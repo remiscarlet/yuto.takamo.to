@@ -1,74 +1,64 @@
 colRatio: !!str 6:6
 sects:
--
-  sectTitle: !!str In-Flight Projects
-  projects:
-  -
-    title: !!str py-curses_space-invaders
-    link: !!str https://github.com/remiscarlet/py-curses_space-invaders
-    description: !!str |
-      A fun little commandline Space Invaders written using python standard libraries only. This was started as part of my submitted code sample for joining the Recurse Center which I participated in during the 2021 Summer1 Batch. The submission was intentionally incomplete as the task was to work on the project as part of a "pair programming task" as part of the interview.
-    tech:
-    - Python3
-  -
-    title: !!str TDRPG
-    link: !!str https://github.com/remiscarlet/TDRPG
-    description: !!str |
-      My first non-trivial Unity project. I intend on working on this project for a long time. Because I am still fairly new to Unity, my plan is to work on smaller Unity projects and implement new features to TDRPG as I learn more and gain new Unity skillsets. Gameplay is intended to be a 3rd person high-fantasy themed tower defense game reminiscent of Dungeon Defenders in playstyle and mechanics.
-    tech:
-    - Unity
--
-  sectTitle: !!str Finished Projects
-  projects:
-  -
-    title: !!str Amat.su/kaze!
-    link: !!str https://amat.su/kaze
-    description: !!str |
-      A URL shortener with accompanying Chrome and Firefox extensions themed after a character from a Japanese web game. The project is set up with microservice and provisioned with IaC and CICD.
-    tech:
-    - Python3
-    - Django
-    - Docker Compose
-    - Nginx
-    - Certbot
-    - GCP (GCE, GCR, Cloud SQL & DNS)
-    - Terraform
-    - Github Actions
--
-  sectTitle: !!str Scripts and Tools
-  projects:
-  -
-    title: !!str Elite Dangerous Arduino Controller Code
-    link: !!str https://github.com/remiscarlet/elite-dangerous-controller-arduino-logic/blob/master/main.ino
-    description: !!str |
-      I created a custom controller board with switches, buttons, etc for playing Elite Dangerous, a fantastic space flight, combat, and trade simulator. One of the more well known aspects of the game is the absolute insane number of keybindings and functions in the game. This code simply powers the arduino board behind the custom controller.
-    tech:
-    - Arduino
-    - Construction of a physical game controller
-    - Basic device hacking
-  -
-    title: !!str Evike "Box of Awesome" Sniper
-    link: !!str https://github.com/remiscarlet/evike-boa-snipe/blob/master/kekeroni.js
-    description: !!str |
-      This is a simple javascript app that you can run in your browser (I use a Chrome extension called CJS). Evike, an online airsoft retailer, has occasional events where they sell limited-quantity "Box of Awesome"s which are essentially grab bags. Due to the limited quantity and poularity of the item, it can be extremely difficult to buy these so I wrote this sniper to automatically buy BoAs.
-    tech:
-    - Javascript
--
-  sectTitle: !!str Abandoned Projects
-  projects:
-  -
-    title: !!str Water Emblem
-    link: !!str https://github.com/remiscarlet/WaterEmblem
-    description: !!str |
-      This was a game project using python and pygame to create a Fire Emblem/Advance Wars-esque top-down grid-based strategy game. The idea was to make this as a fan-derivative game of the Japanese game called Kantai Collection by using characters from that game. While the project is abandoned, a good chunk of the game's framework was finished and had a playable demo which had friendly and enemy units, battle animations, fog of war, and other game mechanics.
-    tech:
-    - Python2
-    - PyGame
-  -
-    title: !!str Blook
-    link: !!str https://github.com/remiscarlet/Blook
-    description: !!str |
-      A VR rhythm game built in 24 hours with friends from undergrad at Unhackathon 2014. This project won us recognition with several awards at the event. Gameplay uses your body to strike blocks that fly in your direction based on the music. Mechanics were influenced by Jubeat by Konami.
-    tech:
-    - Python2
-    - Unity
+  - sectTitle: !!str In-Flight Projects
+    projects:
+      - title: !!str py-curses_space-invaders
+        link: !!str https://github.com/remiscarlet/py-curses_space-invaders
+        description: !!str |
+          A fun little commandline Space Invaders written using python standard libraries only. This was started as part of my submitted code sample for joining the Recurse Center which I participated in during the 2021 Summer1 Batch. The submission was intentionally incomplete as the task was to work on the project as part of a "pair programming task" as part of the interview.
+        tech:
+          - Python3
+          - curses
+      - title: !!str TDRPG
+        link: !!str https://github.com/remiscarlet/TDRPG
+        description: !!str |
+          My first non-trivial Unity project. I intend on working on this project for a long time. Because I am still fairly new to Unity, my plan is to work on smaller Unity projects and implement new features to TDRPG as I learn more and gain new Unity skillsets. Gameplay is intended to be a 3rd person high-fantasy themed tower defense game reminiscent of Dungeon Defenders in playstyle and mechanics.
+        tech:
+          - Unity
+  - sectTitle: !!str Finished Projects
+    projects:
+      - title: !!str Amat.su/kaze!
+        link: !!str https://amat.su/kaze
+        description: !!str |
+          A URL shortener with accompanying Chrome and Firefox extensions themed after a character from a Japanese web game. The project is set up with microservice and provisioned with IaC and CICD.
+        tech:
+          - Python3
+          - Django
+          - Docker Compose
+          - Nginx
+          - Certbot
+          - GCP (GCE, GCR, Cloud SQL & DNS)
+          - Terraform
+          - Github Actions
+  - sectTitle: !!str Scripts and Tools
+    projects:
+      - title: !!str Elite Dangerous Arduino Controller Code
+        link: !!str https://github.com/remiscarlet/elite-dangerous-controller-arduino-logic/blob/master/main.ino
+        description: !!str |
+          I created a custom controller board with switches, buttons, etc for playing Elite Dangerous, a fantastic space flight, combat, and trade simulator. One of the more well known aspects of the game is the absolute insane number of keybindings and functions in the game. This code simply powers the arduino board behind the custom controller.
+        tech:
+          - Arduino
+          - Construction of a physical game controller
+          - Basic device hacking
+      - title: !!str Evike "Box of Awesome" Sniper
+        link: !!str https://github.com/remiscarlet/evike-boa-snipe/blob/master/kekeroni.js
+        description: !!str |
+          This is a simple javascript app that you can run in your browser (I use a Chrome extension called CJS). Evike, an online airsoft retailer, has occasional events where they sell limited-quantity "Box of Awesome"s which are essentially grab bags. Due to the limited quantity and poularity of the item, it can be extremely difficult to buy these so I wrote this sniper to automatically buy BoAs.
+        tech:
+          - Javascript
+  - sectTitle: !!str Abandoned Projects
+    projects:
+      - title: !!str Water Emblem
+        link: !!str https://github.com/remiscarlet/WaterEmblem
+        description: !!str |
+          This was a game project using python and pygame to create a Fire Emblem/Advance Wars-esque top-down grid-based strategy game. The idea was to make this as a fan-derivative game of the Japanese game called Kantai Collection by using characters from that game. While the project is abandoned, a good chunk of the game's framework was finished and had a playable demo which had friendly and enemy units, battle animations, fog of war, and other game mechanics.
+        tech:
+          - Python2
+          - PyGame
+      - title: !!str Blook
+        link: !!str https://github.com/remiscarlet/Blook
+        description: !!str |
+          A VR rhythm game built in 24 hours with friends from undergrad at Unhackathon 2014. This project won us recognition with several awards at the event. Gameplay uses your body to strike blocks that fly in your direction based on the music. Mechanics were influenced by Jubeat by Konami.
+        tech:
+          - Python2
+          - Unity
