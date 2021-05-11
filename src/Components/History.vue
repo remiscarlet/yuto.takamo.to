@@ -6,17 +6,15 @@
           But I do have a long history with technology
         </h3>
         <p>
-        Having been taught programming at a young age, I’ve been creating tools and experiences for most of my life. While I started with humble beginnings unironically creating neon colored Comic Sans websites or creating 3000-line “helloworld.py” IRC chat bots, I’ve since studied and graduated from Carnegie Mellon University and worked on or for a wide range of companies, projects, and communities. Here are just some of my most notable experiences.
+        Having been taught programming at a young age, I’ve been creating tools and experiences for most of my life. While I started with humble beginnings unironically creating neon colored Comic Sans websites or writing 3000-line “helloworld.py” IRC chat bots, I’ve since studied and graduated from Carnegie Mellon University and worked on or for a wide range of companies, projects, and communities. Here are just some of my most notable experiences.
         </p>
       </b-col>
     </b-row>
     <InfoRow
-      v-for="experience in experiences"
+      v-for="experience in yamlData.experiences"
+      v-bind="experience"
       v-bind:key="experience.title"
-      v-bind:title="experience.title"
-      v-bind:link="experience.link"
-      v-bind:roles="experience.roles"
-      v-bind:description="experience.description"
+      v-bind:colRatio="yamlData.colRatio"
     />
   </b-container>
 </template>
@@ -33,7 +31,7 @@ import InfoRow from './InfoRow.vue';
   }
 })
 export default class History extends Vue {
-  get experiences(): any {
+  get yamlData(): any {
     return YAML.parse(yamlContent);
   }
 };
