@@ -2,7 +2,7 @@
   <b-container>
     <b-row class="mt-5">
       <b-col>
-        <h2>
+        <h2 class="mb-3">
           <a v-if="link" :href="link" target="_blank">{{ title }}</a>
           <span v-else>{{ title }}</span>
         </h2>
