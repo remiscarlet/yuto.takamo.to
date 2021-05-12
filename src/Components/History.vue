@@ -20,7 +20,7 @@
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import * as YAML from 'yaml';
+import { parse } from 'yaml';
 
 import yamlContent from '!!raw-loader!../../content/yaml/experiences.yaml';
 import InfoRow from './InfoRow.vue';
@@ -32,7 +32,7 @@ import InfoRow from './InfoRow.vue';
 })
 export default class History extends Vue {
   get yamlData(): any {
-    return YAML.parse(yamlContent);
+    return parse(yamlContent);
   }
 };
 </script>

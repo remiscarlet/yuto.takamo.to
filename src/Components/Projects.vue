@@ -1,25 +1,27 @@
 <template>
-  <b-container>
-    <b-row class="my-5">
-      <h2>
-        So What Else Have I Done?
-      </h2>
-      <p>
-        These are just some of the various projects I've done on my own over the years.
-      </p>
-    </b-row>
+  <div>
+    <b-container>
+      <b-row class="my-5">
+        <b-col>
+          <h2>
+            So What Else Have I Done?
+          </h2>
+          <p>
+            These are just some of the various projects I've done on my own over the years.
+          </p>
+        </b-col>
+      </b-row>
+    </b-container>
     <ProjectsSect
       v-for="data in yamlData.sects"
       v-bind:key="data.sectTitle"
       v-bind="data"
     />
-    <b-row>
-    </b-row>
-  </b-container>
+  </div>
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import * as YAML from 'yaml';
+import { parse } from 'yaml';
 
 import yamlContent from '!!raw-loader!../../content/yaml/projects.yaml';
 import ProjectsSect from './ProjectsSect.vue';
@@ -31,7 +33,7 @@ import ProjectsSect from './ProjectsSect.vue';
 })
 export default class Projects extends Vue {
   get yamlData(): any {
-    return YAML.parse(yamlContent);
+    return parse(yamlContent);
   }
 };
 

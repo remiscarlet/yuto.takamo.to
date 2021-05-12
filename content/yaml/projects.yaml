@@ -15,8 +15,18 @@ sects:
           My first non-trivial Unity project. I intend on working on this project for a long time. Because I am still fairly new to Unity, my plan is to work on smaller Unity projects and implement new features to TDRPG as I learn more and gain new Unity skillsets. Gameplay is intended to be a 3rd person high-fantasy themed tower defense game reminiscent of Dungeon Defenders in playstyle and mechanics.
         tech:
           - Unity
-  - sectTitle: !!str Finished Projects
+  - sectTitle: !!str Finished/Mature Projects
     projects:
+      - title: !!str yuto.takamo.to
+        link: !!str https://github.com/remiscarlet/yuto.takamo.to
+        description: !!str |
+          The site you're viewing right now! This is my personal portfolio page built from scratch using modern frameworks and tools. Disclaimer - I'm definitely not a designer by trade, hah.
+        tech:
+          - Typescript
+          - VueJS
+          - Bootstrap
+          - Webpack5
+          - Github Pages, Actions
       - title: !!str Amat.su/kaze!
         link: !!str https://amat.su/kaze
         description: !!str |
@@ -30,6 +40,16 @@ sects:
           - GCP (GCE, GCR, Cloud SQL & DNS)
           - Terraform
           - Github Actions
+      - title: !!str AquaBot
+        link: !!str https://github.com/order-of-axis-association/AquaBot
+        description: !!str |
+          A Discord chat bot written in Golang using a fairly low-level library requiring most functionality to be coded from scratch. Features include custom command parsers and an easily extensible set of commands and libraries with integrations with databases currently using GCP CloudSQL. This project is also set up with full CICD.
+        tech:
+          - Golang
+          - Docker
+          - GCP (GCE, GCR, Cloud SQL & DNS)
+          - Github Actions
+          - Terraform
   - sectTitle: !!str Scripts and Tools
     projects:
       - title: !!str Elite Dangerous Arduino Controller Code
@@ -38,8 +58,7 @@ sects:
           I created a custom controller board with switches, buttons, etc for playing Elite Dangerous, a fantastic space flight, combat, and trade simulator. One of the more well known aspects of the game is the absolute insane number of keybindings and functions in the game. This code simply powers the arduino board behind the custom controller.
         tech:
           - Arduino
-          - Construction of a physical game controller
-          - Basic device hacking
+          - Hardware Hacking/Building
       - title: !!str Evike "Box of Awesome" Sniper
         link: !!str https://github.com/remiscarlet/evike-boa-snipe/blob/master/kekeroni.js
         description: !!str |

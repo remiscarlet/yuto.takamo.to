@@ -1,0 +1,7 @@
+ratings:
+  - tech: !!str Python2&3
+    rating: !!str 5/5
+    comment: By far my most comfortable and extensively used language of choice.
+  - tech: !!str PHP
+    rating: !!str 5/5
+    comment: While not my first choice of language, it's undeniable that the tens of thousands of lines of PHP I wrote at Etsy didn't get me fairly familiar with its workings.

@@ -1,7 +1,7 @@
 <template>
   <b-container>
     <b-row class="mt-5">
-      <b-col cols=12>
+      <b-col>
         <h3>
           {{ sectTitle }}
         </h3>

@@ -2,9 +2,13 @@
   <div>
     <b-navbar fixed="top" v-bind:class="{'scrolled-up': isScrollingUp, 'scrolled-down': isScrollingDown}" toggleable="lg" type="dark" variant="alert">
       <b-navbar-brand href="#" class="text-decoration-none mr-5" v-on:click="changePage('home')">Yuto Takamoto</b-navbar-brand>
-      <b-navbar-nav fill=true align="right">
-        <b-nav-item v-on:click="changePage('projects')">Some of My Projects</b-nav-item>
-      </b-navbar-nav>
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <b-collapse id="nav-collapse" align="right" is-nav>
+        <b-navbar-nav align="right" class="ml-auto">
+          <b-nav-item v-on:click="changePage('mytech')">My Tech</b-nav-item>
+          <b-nav-item v-on:click="changePage('projects')">Some of My Projects</b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
     </b-navbar>
   </div>
 </template>
@@ -29,7 +33,6 @@ export default class Navbar extends Vue {
 
   changePage(page: string) {
     this.$emit('changePage', page);
-    return;
   }
 
   handleScroll (event: Event) {
