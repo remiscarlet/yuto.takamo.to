@@ -10,14 +10,17 @@
     </b-row>
     <b-row>
       <b-col v-bind:cols="leftColWidth">
-        <ul>
-          <li v-for="role in roles" v-bind:key="role.tenure" v-bind:class="{ intern: role.isintern }">
-            {{ role.position }} <span v-if="role.roleid" class="roleid">({{ role.roleid }})</span><br v-if="role.tenure" />
-            <span class="tenure" v-if="role.tenure">({{ role.tenure }})</span>
-          </li>
-        </ul>
+        <div>
+          <h6 class="pl-2 m-0"><i>Positions:</i></h6>
+          <ul>
+            <li v-for="role in roles" v-bind:key="role.tenure" v-bind:class="{ intern: role.isintern }" class="position">
+              {{ role.position }} <span v-if="role.roleid" class="roleid">({{ role.roleid }})</span><br v-if="role.tenure" />
+              <span class="tenure" v-if="role.tenure">({{ role.tenure }})</span>
+            </li>
+          </ul>
+        </div>
         <div class="mt-5" v-if="tech">
-          <h5 class="pl-2">Tech I Used:</h5>
+          <h6 class="pl-2 m-0"><i>Tech I Used:</i></h6>
           <ul>
             <li v-for="line in tech" class="intern">
               {{ line }}
@@ -83,6 +86,10 @@ p {
   &.noindent {
     text-indent: 0;
   }
+}
+
+.position {
+  font-size: 0.9em;
 }
 
 .intern {

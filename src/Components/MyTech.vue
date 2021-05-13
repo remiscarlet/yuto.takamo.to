@@ -4,7 +4,7 @@
       <b-row>
          <b-col>
            <h2>
-             The Technologies I've Used Over the Years
+             Tech I've Used Over the Years
            </h2>
            <p>
            While hardly an exhaustive list, here's a list of technologies I've used and a relative level of comfort and experience I have with each one. Here's a rough measure of what each level means:

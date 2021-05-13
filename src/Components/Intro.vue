@@ -12,15 +12,15 @@
       </b-col>
     </b-row>
     <b-row class="my-5" align-v="center">
-      <b-col>
-        <b-img src="../../assets/images/profile.jpg" fluid alt="Remi cute"></b-img>
+      <b-col cols=5>
+        <b-img src="../../assets/images/profile.jpg" rounded="circle" fluid alt="Remi cute"></b-img>
       </b-col>
-      <b-col>
+      <b-col cols=7>
         <h4 class="text-left">Coding Isn't All I Do</h4>
-        <p class="text-left lead">
+        <p class="text-left smaller-text">
         I also spend copious amounts of time cooking up a storm, continuing my lifelong journey as a musician, and building connections and communities with the people I love.
         </p>
-        <p class="text-left lead">
+        <p class="text-left smaller-text lead">
         I also spend too much time on games.
         </p>
       </b-col>
@@ -44,5 +44,9 @@ export default class Intro extends Vue { };
 p {
   font-size: 1em;
   text-align: center;
+}
+
+.smaller-text {
+  font-size: 0.9em;
 }
 </style>
