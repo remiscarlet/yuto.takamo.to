@@ -17,11 +17,11 @@
                </b-tr>
                <b-tr>
                  <b-td><star-rating rating="1.0" :star-style="starStyle"/></b-td>
-                 <b-td>I've used it in very limited capacities. I might remember some syntax.</li></b-td>
+                 <b-td>I've used it in very limited capacities. I might remember valid syntax without looking it up.</li></b-td>
                </b-tr>
                <b-tr>
                  <b-td><star-rating rating="2.0" :star-style="starStyle"/></b-td>
-                 <b-td>I've used it in projects and can read/write usable code/configs, but I'm largely relying on my google-fu.</b-td>
+                 <b-td>I've used it in projects and can read/write usable code/configs, but I'm still using my google-fu frequently for api docs.</b-td>
                </b-tr>
                <b-tr>
                  <b-td><star-rating rating="3.0" :star-style="starStyle"/></b-td>

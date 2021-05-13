@@ -71,7 +71,7 @@ ratings:
       comment: !!str The syslog pipeline I configured and maintained ran from hundreds of hosts and processed terabytes of data per day.
     - name: !!str ELK
       rating: 3.0
-      comment: !!str My experience is mostly with the Elasticsearch and Logstash side though I did use the Kibana interface for Lucene querying. My primary experience is with configuring complex Logstash configurations including custom output plugins and a large number of custom grok expressions.
+      comment: !!str My experience is mostly with the Elasticsearch and Logstash side though I did use the Kibana interface for Lucene querying. My primary experience is with configuring complex Logstash configurations including custom output plugins and a large number of custom grok patterns.
     - name: !!str Nginx
       rating: 2.75
       comment: For a technology I've been using for almost a decade, I'm still copypasting a lot
@@ -86,13 +86,13 @@ ratings:
   Operating Systems:
     - name: !!str MacOS
       rating: 4.5
-      comment: But I largely just ssh to and develop from my linux VMs.
+      comment: But I largely just ssh to and develop from my linux hosts ("I'd like to interject for a moment")
     - name: !!str Windows
       rating: 4.0
       comment: My desktop daily driver
     - name: !!str Ubuntu
       rating: 4.0
-      comment: My preferred development and general use linux environment ("I'd like to interject for a moment")
+      comment: My preferred development and general use linux environment
     - name: !!str CentOS
       rating: 3.5
       comment: Secondary development environment. Primary 'job work' OS. SELinux is a necessary pain.
