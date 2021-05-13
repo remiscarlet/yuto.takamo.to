@@ -1,7 +1,96 @@
 ratings:
-  - tech: !!str Python2&3
-    rating: !!str 5/5
-    comment: By far my most comfortable and extensively used language of choice.
-  - tech: !!str PHP
-    rating: !!str 5/5
-    comment: While not my first choice of language, it's undeniable that the tens of thousands of lines of PHP I wrote at Etsy didn't get me fairly familiar with its workings.
+  Languages:
+    - name: !!str Python2&3
+      rating: !!float 5.0
+      comment: By far my most comfortable and extensively used language of choice.
+      style:
+        randomizeFillColor: true
+    - name: !!str PHP
+      rating: !!float 4.5
+      comment: While not my first choice of language, it's undeniable that the tens of thousands of lines of PHP I wrote at Etsy did get me fairly familiar with its workings.
+      style:
+        randomizeFillColor: true
+    - name: !!str Javascript
+      rating: 4.0
+    - name: !!str SQL
+      rating: 4.0
+      comments: Mostly MySQL with some PSQL.
+    - name: !!str Bash
+      rating: 3.75
+      comments: I've written a good chunk of systems automation scripts in Bash to not have installation dependencies like python or ruby in certain environments.
+    - name: !!str Typescript
+      rating: 3.0
+    - name: !!str Golang
+      rating: 3.0
+    - name: !!str C#/Unity
+      rating: 2.8
+      comment: My C# experience is 1:1 tied with my Unity experience.
+    - name: !!str Ruby
+      rating: 2.5
+      comment: !!str Experience is mostly writing Chef recipes and the odd Logstash plugin or two
+    - name: !!str C/C++
+      rating: 2.5
+    - name: !!str Lua
+      rating: 2.0
+    - name: !!str Ocaml
+      rating: 2.0
+    - name: !!str SML
+      rating: 1.5
+  Major Web Frameworks:
+    - name: !!str Django (Python)
+      rating: !!float 4.0
+      comment: The first web framework I learned
+    - name: !!str Vue (JS)
+      rating: 2.9
+      comment: Currently the only modern frontend framework I've learned
+    - name: !!str Bootstrap
+      rating: 2.0
+      comment: Using on and off since like 2013.
+  Systems and Tools:
+    - name: !!str Terraform
+      rating: 4.0
+      comment: Experience is mostly with GCP provisioning
+    - name: !!str Github Actions/Pages/Integrations
+      rating: 4.0
+    - name: !!str Docker/Docker Compose
+      rating: 4.0
+    - name: !!str Chef
+      rating: 3.0
+      comment: !!str Experience is mostly as a user/consumer, but have written a lot of tools and automations.
+    - name: !!str Syslog
+      rating: 3.0
+      comment: !!str The syslog pipeline I configured and maintained ran from hundreds of hosts and processed terabytes of data per day.
+    - name: !!str ELK
+      rating: 3.0
+      comment: !!str My experience is mostly with the Elasticsearch and Logstash side while I did use the Kibana interface for Lucene querying. My primary experience is with configuring complex Logstash configurations including custom output plugins and a large number of custom grok expressions.
+    - name: !!str Nginx
+      rating: 2.75
+      comment: For a technology I've been using for almost a decade, I'm still copypasting a lot
+    - name: !!str Apache
+      rating: 2.25
+    - name: !!str Yarn/Webpack
+      rating: 2.25
+      comment: And a taste of the myriad plugins available...
+    - name: !!str Jenkins
+      rating: 2.0
+      comment: !!str Mostly as a user with some experience configuring and managing
+  Operating Systems:
+    - name: !!str MacOS
+      rating: 4.5
+      comment: But I largely just ssh to and develop from my linux VMs.
+    - name: !!str Ubuntu
+      rating: 4.0
+    - name: !!str Windows
+      rating: 4.0
+    - name: !!str CentOS
+      rating: 3.75
+
+  Cloud Tech:
+    - name: !!str "[GCP] Compute Engine"
+      rating: 4.5
+    - name: !!str "[GCP] Cloud Storage"
+      rating: 5.0
+    - name: !!str "[AWS] EC2"
+      rating: 4.0
+    - name: !!str "[AWS] Route53"
+      rating: 4.0
