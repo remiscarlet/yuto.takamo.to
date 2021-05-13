@@ -11,13 +11,13 @@
     <b-row>
       <b-col v-bind:cols="leftColWidth">
         <ul>
-          <li v-for="role in roles" v-bind:key="role.position" v-bind:class="{ intern: role.isintern }">
+          <li v-for="role in roles" v-bind:key="role.tenure" v-bind:class="{ intern: role.isintern }">
             {{ role.position }} <span v-if="role.roleid" class="roleid">({{ role.roleid }})</span><br v-if="role.tenure" />
             <span class="tenure" v-if="role.tenure">({{ role.tenure }})</span>
           </li>
         </ul>
         <div class="mt-5" v-if="tech">
-          <h5>Tech I Used:</h5>
+          <h5 class="pl-2">Tech I Used:</h5>
           <ul>
             <li v-for="line in tech" class="intern">
               {{ line }}
@@ -37,7 +37,7 @@
 import { Component, Prop, Watch, Vue } from 'vue-property-decorator';
 
 @Component
-export default class InfoRow extends Vue {
+export default class Experiences extends Vue {
   @Prop() title: string;
   @Prop() roles: Array<string>;
   @Prop({default: false}) isintern: boolean;
@@ -60,14 +60,6 @@ export default class InfoRow extends Vue {
   }
 
   mounted() {
-    console.log("InfoRow:");
-    console.log(this.title);
-    console.log(this.roles);
-    console.log(this.isintern);
-    console.log(this.colRatio);
-    console.log(this.link);
-    console.log(this.description);
-
     this.initColWidths(this.colRatio);
   }
 

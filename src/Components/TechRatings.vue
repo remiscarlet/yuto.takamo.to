@@ -1,16 +1,16 @@
 <template>
   <b-tbody>
-    <b-tr class="pt-5">
+    <b-tr class="my-5">
       <h4>{{ category }}</h4>
     </b-tr>
     <b-tr v-for="tech in technologies" v-bind:key="tech.name">
-      <b-td style="width:25%" class="p-2 align-middle">
+      <b-td style="width:20%" class="p-1 py-2 align-middle">
         <h6 class="m-0">{{ tech.name }}</h6>
       </b-td>
-      <b-td style="width:25%" class="p-2 align-middle">
+      <b-td style="width:20%" class="p-1 align-middle">
         <star-rating :rating="tech.rating" :star-style="starStyle(tech)"></star-rating>
       </b-td>
-      <b-td style="width:50%" class="p-2 align-middle comment">
+      <b-td style="width:60%" class="p-1 align-middle comment">
         {{ tech.comment ? tech.comment : "" }}
       </b-td>
     </b-tr>
@@ -33,26 +33,23 @@ export default class TechRatings extends Vue {
   @Prop() category: string
   @Prop() technologies: Array<object>
 
-  created() {
-    console.log("#######");
-    console.log(this.category);
-    console.log(this.technologies);
-  }
+  @Prop({default: "#ffc4cb"}) defaultFullStarColor: string
+  @Prop({default: "#737373"}) defaultEmptyStarColor: string
+  @Prop({default: 20}) defaultStarWidth: number
+  @Prop({default: 20}) defaultStarHeight: number
 
   starStyle(params: any) {
-    let fullStarColor: string = params.fullStarColor ?? '#ed8a19';
-    let emptyStarColor: string = params.emptyStarColor ?? '#737373';
-    let starWidth: number = params.starWidth ?? 20;
-    let starHeight: number = params.starHeight ?? 20;
+    let fullStarColor: string = params.fullStarColor ?? this.defaultFullStarColor;
+    let emptyStarColor: string = params.emptyStarColor ?? this.defaultEmptyStarColor;
+    let starWidth: number = params.starWidth ?? this.defaultStarWidth;
+    let starHeight: number = params.starHeight ?? this.defaultStarHeight;
 
-    if ( ! params.noRandomizeFillColor) {
+    if (params.randomizeFillColor) {
       fullStarColor = randomColor({
         luminosity: 'light',
         hue: 'red',
       });
     }
-
-    console.log("Color is: "+fullStarColor);
 
     return {
       fullStarColor: fullStarColor,

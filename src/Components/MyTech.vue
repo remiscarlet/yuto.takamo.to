@@ -3,9 +3,9 @@
     <b-container>
       <b-row>
          <b-col>
-           <h3>
-             The Technology I've Used Over the Years
-           </h3>
+           <h2>
+             The Technologies I've Used Over the Years
+           </h2>
            <p>
            While hardly an exhaustive list, here's a list of technologies I've used and a relative level of comfort and experience I have with each one. Here's a rough measure of what each level means:
            </p>
@@ -17,23 +17,23 @@
                </b-tr>
                <b-tr>
                  <b-td><star-rating rating="1.0" :star-style="starStyle"/></b-td>
-                 <b-td>I've used it... like once in my life.</li></b-td>
+                 <b-td>I've used it in very limited capacities. I might remember some syntax.</li></b-td>
                </b-tr>
                <b-tr>
                  <b-td><star-rating rating="2.0" :star-style="starStyle"/></b-td>
-                 <b-td>I've used it in projects and can read/write usable code/configs, but I'm largely googling</b-td>
+                 <b-td>I've used it in projects and can read/write usable code/configs, but I'm largely relying on my google-fu.</b-td>
                </b-tr>
                <b-tr>
                  <b-td><star-rating rating="3.0" :star-style="starStyle"/></b-td>
-                 <b-td>A technology I've used to build things from scratch and would feel comfortable starting a greenfield with this.</b-td>
+                 <b-td>A technology I've used to build a variety of things and would feel comfortable using on a greenfield.</b-td>
                </b-tr>
                <b-tr>
                  <b-td><star-rating rating="4.0" :star-style="starStyle"/></b-td>
-                 <b-td>Something I've been using for a while and would consider myself very comfortable</b-td>
+                 <b-td>Something I've been using for a while and consider myself very comfortable with. I utilize some advanced concepts/techniques/features.</b-td>
                </b-tr>
                <b-tr>
                  <b-td><star-rating rating="5.0" :star-style="starStyle"/></b-td>
-                 <b-td>I've been using this long enough that I have strong opinions and understand the lower level implications of this technology</b-td>
+                 <b-td>I've been using this long enough that I have strong opinions. I'm also very comfortable with advanced/power user features. </b-td>
                </b-tr>
              </b-tbody>
            </b-table-simple>
@@ -42,14 +42,12 @@
     </b-container>
     <b-container class="my-5">
       <b-table-simple>
-        <caption>Rating my Technologies</caption>
-        <b-thead>
-        </b-thead>
         <TechRatings
           v-for="(technologies, category) in yamlData.ratings"
           v-bind:key="category"
           v-bind:category="category"
           v-bind:technologies="technologies"
+          v-bind:defaultFullStarColor="fullStarColor"
         />
       </b-table-simple>
     </b-container>
@@ -69,12 +67,15 @@ import TechRatings from './TechRatings.vue';
   },
 })
 export default class MyTech extends Vue {
+  fullStarColor: string = "#ffc4cb";
+
   get yamlData(): any {
     return parse(yamlContent);
   }
 
   get starStyle() {
     return {
+      fullStarColor: this.fullStarColor,
       starWidth: 20,
       starHeight: 20,
     }
@@ -84,7 +85,12 @@ export default class MyTech extends Vue {
 <style lang="scss" scoped>
 
 .container {
-  font-size: 0.8em;
+  font-size: 0.9em;
+}
+
+p {
+  text-indent: 1.2em;
+  font-size: 0.9em;
 }
 
 tbody td {

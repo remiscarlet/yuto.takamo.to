@@ -20,7 +20,7 @@ sects:
       - title: !!str yuto.takamo.to
         link: !!str https://github.com/remiscarlet/yuto.takamo.to
         description: !!str |
-          The site you're viewing right now! This is my personal portfolio page built from scratch using modern frameworks and tools. Disclaimer - I'm definitely not a designer by trade, hah.
+          The site you're viewing right now! This is my personal portfolio page built using modern frameworks and tools. Disclaimer - I'm definitely not a designer by trade, hah.
         tech:
           - Typescript
           - VueJS
@@ -30,7 +30,7 @@ sects:
       - title: !!str Amat.su/kaze!
         link: !!str https://amat.su/kaze
         description: !!str |
-          A URL shortener with accompanying Chrome and Firefox extensions themed after a character from a Japanese web game. The project is set up with microservice and provisioned with IaC and CICD.
+          A URL shortener with accompanying Chrome and Firefox extensions themed after a character from a Japanese web game. The project is set up with microservices and provisioned with IaC and CICD.
         tech:
           - Python3
           - Django

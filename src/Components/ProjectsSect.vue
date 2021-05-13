@@ -8,7 +8,7 @@
       </b-col>
     </b-row>
     <b-row>
-      <b-col class="pl-5">
+      <b-col class="pl-4">
         <b-container v-for="project in projects" v-bind:key="project.title" class="mt-3">
           <h4>
             <a v-if="project.link" v-bind:href="project.link" target="_blank">{{ project.title }}</a>
@@ -19,7 +19,7 @@
               {{ line }}
             </p>
             <div style="width: 25%" class="mx-3 tech-used">
-              <h5>Tech Used</h5>
+              <h5 class="pl-2">Tech Used</h5>
               <ul>
                 <li v-for="line in project.tech">
                   {{ line }}

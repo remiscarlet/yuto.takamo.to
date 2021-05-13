@@ -668,6 +668,16 @@ alphanum-sort@^1.0.2:
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
+animate.css@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/animate.css/-/animate.css-4.1.1.tgz#614ec5a81131d7e4dc362a58143f7406abd68075"
+  integrity sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==
+
+animated-vue@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/animated-vue/-/animated-vue-0.5.3.tgz#83bce5d3ab83fe34761226f9410140c8b1ce61fb"
+  integrity sha1-g7zl06uD/jR2Eib5QQFAyLHOYfs=
+
 ansi-colors@^3.0.0:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-3.2.4.tgz#e3a3da4bfbae6c86a9c285625de124a234026fbf"
@@ -5846,11 +5856,6 @@ vue-class-component@^7.2.6:
   version "7.2.6"
   resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-7.2.6.tgz#8471e037b8e4762f5a464686e19e5afc708502e4"
   integrity sha512-+eaQXVrAm/LldalI272PpDe3+i4mPis0ORiMYxF6Ae4hyuCh15W8Idet7wPUEs4N4YptgFHGys4UrgNQOMyO6w==
-
-vue-dynamic-star-rating@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/vue-dynamic-star-rating/-/vue-dynamic-star-rating-1.0.8.tgz#45da24ea6ce11d5d63dc2410394f06724febd789"
-  integrity sha512-HZUbmot40hrWUYAe6pSUkg2HcGl8DPfiJ0tbsnQ3yokjHNhBYZqDyLLxYX7EJu0S1AYi1vw2tjyCuI1/nWOD/w==
 
 vue-eslint-parser@^7.6.0:
   version "7.6.0"
