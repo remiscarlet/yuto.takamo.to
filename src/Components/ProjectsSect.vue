@@ -9,7 +9,7 @@
     </b-row>
     <b-row>
       <b-col class="pl-4">
-        <b-container v-for="project in projects" v-bind:key="project.title" class="mt-3">
+        <div v-for="project in projects" v-bind:key="project.title" class="mt-3">
           <h4>
             <a v-if="project.link" v-bind:href="project.link" target="_blank">{{ project.title }}</a>
             <span v-else>{{ project.title }}</span>
@@ -27,15 +27,22 @@
               </ul>
             </div>
           </div>
-        </b-container>
+        </div>
       </b-col>
     </b-row>
   </b-container>
 </template>
 <script lang="ts">
 import { Component, Prop, Watch, Vue } from 'vue-property-decorator';
+import { BContainer, BRow, BCol } from 'bootstrap-vue';
 
-@Component
+@Component({
+  components: {
+    BContainer,
+    BRow,
+    BCol,
+  },
+})
 export default class ProjectsSect extends Vue {
   @Prop() sectTitle: string;
   @Prop() projects: Array<any>;

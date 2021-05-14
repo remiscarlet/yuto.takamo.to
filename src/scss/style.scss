@@ -16,10 +16,8 @@ $darkest: #515152;
 $body-bg: $dark;
 $body-color: $lightest;
 
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
-@import 'node_modules/bootstrap-vue/src/index.scss';
-
-
+@import 'bootstrap.scss';
+@import 'bootstrap-vue.scss';
 
 body {
     font-family: $font_paragraphs;

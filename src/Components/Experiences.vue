@@ -38,8 +38,15 @@
 </template>
 <script lang="ts">
 import { Component, Prop, Watch, Vue } from 'vue-property-decorator';
+import { BContainer, BRow, BCol } from 'bootstrap-vue';
 
-@Component
+@Component({
+  components: {
+    BContainer,
+    BRow,
+    BCol,
+  }
+})
 export default class Experiences extends Vue {
   @Prop() title: string;
   @Prop() roles: Array<string>;

@@ -6,8 +6,13 @@
 </template>
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
+import { BLink } from 'bootstrap-vue';
 
-@Component
+@Component({
+  components: {
+    BLink,
+  },
+})
 export default class Navbar extends Vue {
 };
 </script>

@@ -22,6 +22,7 @@
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import { BContainer, BRow, BCol } from 'bootstrap-vue';
 import { parse } from 'yaml';
 
 import yamlContent from '!!raw-loader!../../content/yaml/experiences.yaml';
@@ -30,6 +31,9 @@ import Experiences from './Experiences.vue';
 @Component({
   components: {
     Experiences,
+    BContainer,
+    BRow,
+    BCol,
   }
 })
 export default class History extends Vue {

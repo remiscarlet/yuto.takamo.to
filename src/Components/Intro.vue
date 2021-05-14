@@ -30,11 +30,16 @@
 
 <script lang="ts">
 import AdjectiveSlider from './AdjectiveSlider.vue';
+import { BContainer, BRow, BCol, BImg } from 'bootstrap-vue';
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
   components: {
     AdjectiveSlider,
+    BContainer,
+    BRow,
+    BCol,
+    BImg,
   },
 })
 export default class Intro extends Vue { };

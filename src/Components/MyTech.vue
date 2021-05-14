@@ -55,6 +55,7 @@
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import { BContainer, BTableSimple, BTbody, BTr, BTd } from 'bootstrap-vue';
 import { parse } from 'yaml';
 
 import StarRating from './StarRating.vue';
@@ -63,7 +64,12 @@ import TechRatings from './TechRatings.vue';
 
 @Component({
   components: {
-    TechRatings
+    TechRatings,
+    BContainer,
+    BTableSimple,
+    BTbody,
+    BTr,
+    BTd
   },
 })
 export default class MyTech extends Vue {

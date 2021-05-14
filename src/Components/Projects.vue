@@ -3,9 +3,9 @@
     <b-container>
       <b-row class="my-5">
         <b-col>
-          <h2>
+          <h3>
             So What Else Have I Done?
-          </h2>
+          </h3>
           <p>
             These are just some of the various projects I've done on my own over the years.
           </p>
@@ -21,6 +21,7 @@
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import { BContainer, BRow } from 'bootstrap-vue';
 import { parse } from 'yaml';
 
 import yamlContent from '!!raw-loader!../../content/yaml/projects.yaml';
@@ -28,7 +29,9 @@ import ProjectsSect from './ProjectsSect.vue';
 
 @Component({
   components: {
-    ProjectsSect
+    ProjectsSect,
+    BContainer,
+    BRow,
   }
 })
 export default class Projects extends Vue {

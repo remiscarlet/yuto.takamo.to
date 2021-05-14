@@ -14,8 +14,18 @@
 </template>
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
+import { BNavbar, BNavbarBrand, BNavbarToggle, BCollapse, BNavbarNav, BNavItem } from 'bootstrap-vue';
 
-@Component
+@Component({
+  components: {
+    BNavbar,
+    BNavbarBrand,
+    BNavbarToggle,
+    BCollapse,
+    BNavbarNav,
+    BNavItem,
+  },
+})
 export default class Navbar extends Vue {
   isScrollingUp: boolean = false;
   isScrollingDown: boolean = false;

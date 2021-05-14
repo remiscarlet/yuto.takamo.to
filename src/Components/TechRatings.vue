@@ -18,6 +18,7 @@
 </template>
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
+import { BTbody, BTr, BTd } from 'bootstrap-vue';
 
 import StarRating from './StarRating.vue';
 const randomColor = require('randomcolor');
@@ -27,6 +28,9 @@ Vue.component('star-rating', StarRating);
 @Component({
   components: {
     StarRating,
+    BTbody,
+    BTr,
+    BTd,
   },
 })
 export default class TechRatings extends Vue {
