@@ -1,8 +1,18 @@
 import Vue from 'vue';
+import VueRouter from 'vue-router';
 import App from './App.vue';
 
 import './scss/style.scss';
+import routes from './routes';
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app');
+Vue.use(VueRouter);
+Vue.config.productionTip = false;
+
+const router = new VueRouter(routes);
+
+document.addEventListener('DOMContentLoaded', () => {
+  new Vue({
+    router,
+    render: h => h(App),
+  }).$mount('#app');
+});

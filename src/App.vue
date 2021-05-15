@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <NavBar @changePage="changePage"/>
-    <PageContent v-bind:page="page" />
+    <router-view></router-view>
     <Footer />
   </div>
 </template>
