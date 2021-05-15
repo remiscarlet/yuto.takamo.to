@@ -3,7 +3,7 @@ import { RouterOptions } from 'vue-router';
 import PageContent from './Components/PageContent.vue';
 
 const routes: RouterOptions = {
-  mode: 'history',
+  mode: 'hash',
   routes: [
     {
       path: '/',
