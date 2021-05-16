@@ -4,13 +4,18 @@
       <h4>{{ category }}</h4>
     </b-tr>
     <b-tr v-for="tech in technologies" v-bind:key="tech.name">
-      <b-td style="width:20%" class="p-1 py-2 align-middle">
+      <show-at breakpoint="mediumAndAbove">
+      <b-td class="p-1 py-2 align-middle">
         <h6 class="m-0">{{ tech.name }}</h6>
       </b-td>
-      <b-td style="width:20%" class="p-1 align-middle">
+      </show-at>
+      <b-td class="p-1 align-middle">
+        <show-at breakpoint="small">
+          <h6 class="m-0 mt-2">{{ tech.name }}</h6>
+        </show-at>
         <star-rating :rating="tech.rating" :star-style="starStyle(tech)"></star-rating>
       </b-td>
-      <b-td style="width:60%" class="p-1 align-middle comment">
+      <b-td class="p-1 align-middle comment">
         {{ tech.comment ? tech.comment : "" }}
       </b-td>
     </b-tr>
@@ -19,6 +24,7 @@
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
 import { BTbody, BTr, BTd } from 'bootstrap-vue';
+import { showAt, hideAt } from 'vue-breakpoints';
 
 import StarRating from './StarRating.vue';
 const randomColor = require('randomcolor');
@@ -31,6 +37,8 @@ Vue.component('star-rating', StarRating);
     BTbody,
     BTr,
     BTd,
+    showAt,
+    hideAt,
   },
 })
 export default class TechRatings extends Vue {
@@ -39,8 +47,8 @@ export default class TechRatings extends Vue {
 
   @Prop({default: "#ffc4cb"}) defaultFullStarColor: string
   @Prop({default: "#737373"}) defaultEmptyStarColor: string
-  @Prop({default: 20}) defaultStarWidth: number
-  @Prop({default: 20}) defaultStarHeight: number
+  @Prop({default: 15}) defaultStarWidth: number
+  @Prop({default: 15}) defaultStarHeight: number
 
   starStyle(params: any) {
     let fullStarColor: string = params.fullStarColor ?? this.defaultFullStarColor;

@@ -77,9 +77,11 @@ ratings:
       comment: For a technology I've been using for almost a decade, I'm still copypasting a lot
     - name: !!str Apache
       rating: 2.25
-    - name: !!str Yarn/Webpack
+    - name: !!str Webpack
       rating: 2.25
       comment: And a taste of the myriad plugins available...
+    - name: !!str Yarn
+      rating: 2.0
     - name: !!str Jenkins
       rating: 2.0
       comment: !!str Mostly as a user with some experience configuring and managing
@@ -96,23 +98,23 @@ ratings:
     - name: !!str CentOS
       rating: 3.5
       comment: Secondary development environment. Primary 'job work' OS. SELinux is a necessary pain.
-    - name: !!str Google Container-Optimized OS
+    - name: !!str Google COS
       rating: 3.0
       comment: Honestly more pain than it's worth half the time.
   GCP:
-    - name: !!str Compute Engine (GCE)
+    - name: !!str Compute Engine
       rating: 4.5
-    - name: !!str Big Query (BQ)
+    - name: !!str Big Query
       rating: 4.0
-    - name: !!str Cloud Storage (GCS)
+    - name: !!str Cloud Storage
       rating: 4.0
-    - name: !!str Cloud Build (GCB)
+    - name: !!str Cloud Build
       rating: 3.0
     - name: !!str Cloud SQL
       rating: 3.0
     - name: !!str Cloud DNS
       rating: 3.0
-    - name: !!str Container Registry (GCR)
+    - name: !!str Container Registry
       rating: 3.0
   AWS:
     - name: !!str EC2

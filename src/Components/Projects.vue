@@ -21,7 +21,7 @@
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import { BContainer, BRow } from 'bootstrap-vue';
+import { BContainer, BRow, BCol } from 'bootstrap-vue';
 import { parse } from 'yaml';
 
 import yamlContent from '!!raw-loader!../../content/yaml/projects.yaml';
@@ -32,6 +32,7 @@ import ProjectsSect from './ProjectsSect.vue';
     ProjectsSect,
     BContainer,
     BRow,
+    BCol,
   }
 })
 export default class Projects extends Vue {
