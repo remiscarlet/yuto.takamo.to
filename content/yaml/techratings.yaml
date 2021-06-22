@@ -11,133 +11,134 @@ ratings:
       style:
         randomizeFillColor: true
     - name: !!str Javascript
-      rating: 4.0
+      rating: !!float 4.0
     - name: !!str SQL
-      rating: 4.0
+      rating: !!float 4.0
       comments: Mostly MySQL with some PSQL.
     - name: !!str Bash
-      rating: 3.75
+      rating: !!float 3.75
       comments: I've written a good chunk of systems automation scripts in Bash to not have installation dependencies like python or ruby in certain environments.
     - name: !!str Typescript
-      rating: 3.0
+      rating: !!float 3.0
+      comments: Types are wonderful but I wish there was better adoption in the larger JS community and its toolings.
     - name: !!str Golang
-      rating: 3.0
+      rating: !!float 3.0
     - name: !!str C#/Unity
-      rating: 2.8
+      rating: !!float 2.8
       comment: My C# experience is 1:1 tied with my Unity experience.
     - name: !!str Ruby
-      rating: 2.5
+      rating: !!float 2.5
       comment: !!str Experience is mostly writing Chef recipes and the odd Logstash plugin or two
     - name: !!str C/C++
-      rating: 2.5
+      rating: !!float 2.5
     - name: !!str Lua
-      rating: 2.0
+      rating: !!float 2.0
       comment: !!str MediaWiki modules and scripts for hacked PSP games back in middle school (NitePR, anyone?).
     - name: !!str Ocaml
-      rating: 2.0
+      rating: !!float 2.0
     - name: !!str SML
-      rating: 1.5
+      rating: !!float 1.5
   Major Web Frameworks:
     - name: !!str Django (Python)
       rating: !!float 4.0
       comment: The first web framework I learned
     - name: !!str Vue (JS)
-      rating: 2.9
+      rating: !!float 2.9
       comment: Currently the only modern frontend framework I've learned
     - name: !!str Bootstrap
-      rating: 2.5
+      rating: !!float 2.5
       comment: Using on and off since like 2013.
     - name: !!str Flask (Python)
-      rating: 2.0
+      rating: !!float 2.0
       comment: Haven't built a signficant project with Flask yet.
   Systems and Tools:
     - name: !!str Terraform
-      rating: 4.0
+      rating: !!float 4.0
       comment: Experience is mostly with GCP provisioning
     - name: !!str Git
-      rating: 4.0
+      rating: !!float 4.0
       comment: At one point in my life I wrote as many plumbing commands as porcelain commands.. crying. Also git hooks.
     - name: !!str Github
-      rating: 4.0
+      rating: !!float 4.0
       comment: !!str Actions, Pages, Integrations, etc. I use Github for my daily repository needs.
     - name: !!str Docker
-      rating: 4.0
+      rating: !!float 4.0
       comment: Including Docker Compose
     - name: !!str Chef
-      rating: 3.0
+      rating: !!float 3.0
       comment: !!str Experience is mostly as a user/consumer, but have written a lot of tools and automations.
     - name: !!str Syslog
-      rating: 3.0
+      rating: !!float 3.0
       comment: !!str The syslog pipeline I configured and maintained ran from hundreds of hosts and processed terabytes of data per day.
     - name: !!str ELK
-      rating: 3.0
+      rating: !!float 3.0
       comment: !!str My experience is mostly with the Elasticsearch and Logstash side though I did use the Kibana interface for Lucene querying. My primary experience is with configuring complex Logstash configurations including custom output plugins and a large number of custom grok patterns.
     - name: !!str Nginx
-      rating: 2.75
+      rating: !!float 2.75
       comment: For a technology I've been using for almost a decade, I'm still copypasting a lot
     - name: !!str Apache
-      rating: 2.25
+      rating: !!float 2.25
     - name: !!str Webpack
-      rating: 2.25
+      rating: !!float 2.25
       comment: And a taste of the myriad plugins available...
     - name: !!str Yarn
-      rating: 2.0
+      rating: !!float 2.0
     - name: !!str Jenkins
-      rating: 2.0
+      rating: !!float 2.0
       comment: !!str Mostly as a user with some experience configuring and managing
   Operating Systems:
     - name: !!str MacOS
-      rating: 4.5
+      rating: !!float 4.5
       comment: But I largely just ssh to and develop from my linux hosts ("I'd like to interject for a moment")
     - name: !!str Windows
-      rating: 4.0
+      rating: !!float 4.0
       comment: My desktop daily driver
     - name: !!str Ubuntu
-      rating: 4.0
+      rating: !!float 4.0
       comment: My preferred development and general use linux environment
     - name: !!str CentOS
-      rating: 3.5
+      rating: !!float 3.5
       comment: Secondary development environment. Primary 'job work' OS. SELinux is a necessary pain.
-    - name: !!str Google COS
-      rating: 3.0
+    - name: !!str Google Container-Optimized OS
+      rating: !!float 3.0
       comment: Honestly more pain than it's worth half the time.
   GCP:
-    - name: !!str Compute Engine
-      rating: 4.5
-    - name: !!str Big Query
-      rating: 4.0
-    - name: !!str Cloud Storage
-      rating: 4.0
-    - name: !!str Cloud Build
-      rating: 3.0
+    - name: !!str Compute Engine (GCE)
+      rating: !!float 4.5
+    - name: !!str Big Query (GBQ)
+      rating: !!float 4.0
+    - name: !!str Cloud Storage (GCS)
+      rating: !!float 4.0
+    - name: !!str Cloud Build (GCB)
+      rating: !!float 3.0
     - name: !!str Cloud SQL
-      rating: 3.0
+      rating: !!float 3.0
     - name: !!str Cloud DNS
-      rating: 3.0
+      rating: !!float 3.0
     - name: !!str Container Registry
-      rating: 3.0
+      rating: !!float 3.0
   AWS:
     - name: !!str EC2
-      rating: 4.0
+      rating: !!float 4.0
     - name: !!str Route53
-      rating: 4.0
+      rating: !!float 4.0
     - name: !!str CloudFront
-      rating: 3.0
+      rating: !!float 3.0
     - name: !!str S3
-      rating: 3.0
+      rating: !!float 3.0
   Daily Tools:
     - name: !!str Vim
-      rating: 4.0
+      rating: !!float 4.0
       comment: The only CLI text editor.
     - name: !!str Tmux
-      rating: 4.0
+      rating: !!float 4.0
       comment: Screen? Never heard of her.
     - name: !!str Sublime Text 3
-      rating: 3.5
+      rating: !!float 3.5
       comment: It's a tough call on whether I have more ST3 or Chrome tabs open at any given time.
     - name: !!str Chrome
-      rating: 3.0
+      rating: !!float 3.0
       comment: Could learn to use DevTools a bit more effectively.
     - name: !!str JB Rider
-      rating: 3.0
+      rating: !!float 3.0
       comment: I only use it on Windows and primarily for C#/Unity dev'ing.

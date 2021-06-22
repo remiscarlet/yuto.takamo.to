@@ -7,6 +7,7 @@
         <b-navbar-nav align="right" class="ml-auto">
           <b-nav-item to="tech">My Tech</b-nav-item>
           <b-nav-item to="projects">Some of My Projects</b-nav-item>
+          <b-nav-item href="../../assets/pdf/yuto.takamoto.resume.2021.06.22.pdf" target="_blank">Resume</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>

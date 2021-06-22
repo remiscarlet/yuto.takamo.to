@@ -36,7 +36,7 @@ export default class AdjectiveSlider extends Vue {
   }
 
   created() {
-    setInterval(this.nextAdj, 5000);
+    setInterval(this.nextAdj, 4000);
   }
 };
 </script>

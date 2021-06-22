@@ -35,6 +35,7 @@ const config: webpack.Configuration = {
         loader: 'vue-loader',
         options: {
           img: 'src',
+          'b-nav-item': 'pdf',
         },
       },
     ],
@@ -61,6 +62,7 @@ const config: webpack.Configuration = {
     new CopyPlugin({
       patterns: [
         { from: 'content/images/', to: 'assets/images/' },
+        { from: 'content/pdf/', to: 'assets/pdf/' },
       ],
     }),
     new CleanWebpackPlugin({

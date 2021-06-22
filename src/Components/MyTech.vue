@@ -12,27 +12,27 @@
            <b-table-simple>
              <b-tbody>
                <b-tr>
-                 <b-td><star-rating rating="0.0" :star-style="starStyle"/></b-td>
+                 <b-td><star-rating :rating="0.0" :star-style="starStyle"/></b-td>
                  <b-td>I've heard of it. Or maybe I haven't.</b-td>
                </b-tr>
                <b-tr>
-                 <b-td><star-rating rating="1.0" :star-style="starStyle"/></b-td>
+                 <b-td><star-rating :rating="1.0" :star-style="starStyle"/></b-td>
                  <b-td>I've used it in very limited capacities. I might remember valid syntax without looking it up.</li></b-td>
                </b-tr>
                <b-tr>
-                 <b-td><star-rating rating="2.0" :star-style="starStyle"/></b-td>
+                 <b-td><star-rating :rating="2.0" :star-style="starStyle"/></b-td>
                  <b-td>I've used it in projects and can read/write usable code/configs, but I'm still using my google-fu frequently for api docs.</b-td>
                </b-tr>
                <b-tr>
-                 <b-td><star-rating rating="3.0" :star-style="starStyle"/></b-td>
+                 <b-td><star-rating :rating="3.0" :star-style="starStyle"/></b-td>
                  <b-td>A technology I've used to build a variety of things and would feel comfortable using on a greenfield.</b-td>
                </b-tr>
                <b-tr>
-                 <b-td><star-rating rating="4.0" :star-style="starStyle"/></b-td>
+                 <b-td><star-rating :rating="4.0" :star-style="starStyle"/></b-td>
                  <b-td>Something I've been using for a while and consider myself very comfortable with. I utilize some advanced concepts/techniques/features.</b-td>
                </b-tr>
                <b-tr>
-                 <b-td><star-rating rating="5.0" :star-style="starStyle"/></b-td>
+                 <b-td><star-rating :rating="5.0" :star-style="starStyle"/></b-td>
                  <b-td>I've been using this long enough that I have strong opinions. I'm also very comfortable with advanced/power user features. </b-td>
                </b-tr>
              </b-tbody>
@@ -55,7 +55,7 @@
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import { BContainer, BTableSimple, BTbody, BTr, BTd } from 'bootstrap-vue';
+import { BContainer, BTableSimple, BTbody, BTr, BTd, BRow, BCol } from 'bootstrap-vue';
 import { parse } from 'yaml';
 
 import StarRating from './StarRating.vue';
@@ -69,7 +69,9 @@ import TechRatings from './TechRatings.vue';
     BTableSimple,
     BTbody,
     BTr,
-    BTd
+    BTd,
+    BRow,
+    BCol,
   },
 })
 export default class MyTech extends Vue {
