@@ -1,20 +1,6 @@
 colRatio: !!str 6:6
 sects:
-  - sectTitle: !!str In-Flight Projects
-    projects:
-      - title: !!str py-curses_space-invaders
-        link: !!str https://github.com/remiscarlet/py-curses_space-invaders
-        description: !!str |
-          A fun little commandline Space Invaders written using python standard libraries only. This was started as part of my submitted code sample for joining the Recurse Center which I participated in during the 2021 Summer1 Batch. The submission was intentionally incomplete as the task was to work on the project as part of a "pair programming task" as part of the interview.
-        tech:
-          - Python3
-          - curses
-      - title: !!str TDRPG
-        link: !!str https://github.com/remiscarlet/TDRPG
-        description: !!str |
-          My first non-trivial Unity project. I intend on working on this project for a long time. Because I am still fairly new to Unity, my plan is to work on smaller Unity projects and implement new features to TDRPG as I learn more and gain new Unity skillsets. Gameplay is intended to be a 3rd person high-fantasy themed tower defense game reminiscent of Dungeon Defenders in playstyle and mechanics.
-        tech:
-          - Unity
+
   - sectTitle: !!str Finished/Mature Projects
     projects:
       - title: !!str yuto.takamo.to
@@ -50,6 +36,27 @@ sects:
           - GCP (GCE, GCR, Cloud SQL & DNS)
           - Github Actions
           - Terraform
+  - sectTitle: !!str In-Flight Projects
+    projects:
+      - title: !!str py-curses_space-invaders
+        link: !!str https://github.com/remiscarlet/py-curses_space-invaders
+        description: !!str |
+          A fun little commandline Space Invaders written using python standard libraries only. This was started as part of my submitted code sample for joining the Recurse Center which I participated in during the 2021 Summer1 Batch. The submission was intentionally incomplete as the task was to work on the project as part of a "pair programming task" as part of the interview.
+        tech:
+          - Python3
+          - curses
+      - title: !!str TDRPG
+        link: !!str https://github.com/remiscarlet/TDRPG
+        description: !!str |
+          My first non-trivial Unity project. I intend on working on this project for a long time. Because I am still fairly new to Unity, my plan is to work on smaller Unity projects and implement new features to TDRPG as I learn more and gain new Unity skillsets. Gameplay is intended to be a 3rd person high-fantasy themed tower defense game reminiscent of Dungeon Defenders in playstyle and mechanics.
+        tech:
+          - Unity
+      - title: !!str SRRGT
+        link: !!str https://github.com/remiscarlet/SRRGT
+        description: !!str |
+          A Unity project to try and create a full-featured rhythm game including playback, editors, importing, and possibly a note chart generator.
+        tech:
+          - Unity
   - sectTitle: !!str Scripts and Tools
     projects:
       - title: !!str Elite Dangerous Arduino Controller Code
@@ -62,7 +69,7 @@ sects:
       - title: !!str Evike "Box of Awesome" Sniper
         link: !!str https://github.com/remiscarlet/evike-boa-snipe/blob/master/kekeroni.js
         description: !!str |
-          This is a simple javascript app that you can run in your browser (I use a Chrome extension called CJS). Evike, an online airsoft retailer, has occasional events where they sell limited-quantity "Box of Awesome"s which are essentially grab bags. Due to the limited quantity and poularity of the item, it can be extremely difficult to buy these so I wrote this sniper to automatically buy BoAs.
+          This is a simple javascript app that you can run in your browser (I use a Chrome extension called CJS). Evike, an online airsoft retailer, has occasional events where they sell limited-quantity "Box of Awesome"s which are essentially grab bags. Due to the limited quantity and poularity of the item, it can be extremely difficult to buy these, so I wrote this sniper to automatically buy BoAs.
         tech:
           - Javascript
   - sectTitle: !!str Abandoned Projects
