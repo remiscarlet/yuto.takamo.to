@@ -19,8 +19,10 @@ ratings:
       rating: !!float 3.75
       comments: I've written a good chunk of systems automation scripts in Bash to not have installation dependencies like python or ruby in certain environments.
     - name: !!str Typescript
-      rating: !!float 3.0
+      rating: !!float 3.5
       comments: Types are wonderful but I wish there was better adoption in the larger JS community and its toolings.
+    - name: !!str C++
+      rating: !!float 3.0
     - name: !!str Golang
       rating: !!float 3.0
     - name: !!str C#/Unity
@@ -29,8 +31,6 @@ ratings:
     - name: !!str Ruby
       rating: !!float 2.5
       comment: !!str Experience is mostly writing Chef recipes and the odd Logstash plugin or two
-    - name: !!str C/C++
-      rating: !!float 2.5
     - name: !!str Lua
       rating: !!float 2.0
       comment: !!str MediaWiki modules and scripts for hacked PSP games back in middle school (NitePR, anyone?).
@@ -40,16 +40,17 @@ ratings:
       rating: !!float 1.5
   Major Web Frameworks:
     - name: !!str Django (Python)
-      rating: !!float 4.0
+      rating: !!float 3.5
       comment: The first web framework I learned
+    - name: !!str Angular (JS)
+      rating: !!float 3.5
     - name: !!str Vue (JS)
       rating: !!float 2.9
-      comment: Currently the only modern frontend framework I've learned
     - name: !!str Bootstrap
       rating: !!float 2.5
       comment: Using on and off since like 2013.
     - name: !!str Flask (Python)
-      rating: !!float 2.0
+      rating: !!float 2.5
       comment: Haven't built a signficant project with Flask yet.
   Systems and Tools:
     - name: !!str Terraform
@@ -57,7 +58,7 @@ ratings:
       comment: Experience is mostly with GCP provisioning
     - name: !!str Git
       rating: !!float 4.0
-      comment: At one point in my life I wrote as many plumbing commands as porcelain commands.. crying. Also git hooks.
+      comment: At one point in my life I used as many plumbing commands as porcelain commands.. crying. Also git hooks.
     - name: !!str Github
       rating: !!float 4.0
       comment: !!str Actions, Pages, Integrations, etc. I use Github for my daily repository needs.
