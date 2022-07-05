@@ -3,6 +3,22 @@ sects:
 
   - sectTitle: !!str Finished/Mature Projects
     projects:
+      - title: !!str Yukkuricraft
+        link: !!str https://yukkuricraft.net
+        description: !!str |
+          Yukkuricraft is an online gaming community I started over a decade ago. Over time, I'm glad to say I've helped nurture a tight-knit community that's created many memories and connections.
+
+          These days, I primarily contribute with technology. I host the game servers in my homelab as well as administrate all things technology for the community along with another talented engineer. See more of what we do on our <a href="https://github.com/Yukkuricraft">Github</a>.
+        tech:
+          - Python3
+          - Bash
+          - GCP
+          - Docker
+          - AWS
+          - VueJS
+          - Git
+          - Github Pages, Actions
+          - Terraform
       - title: !!str yuto.takamo.to
         link: !!str https://github.com/remiscarlet/yuto.takamo.to
         description: !!str |

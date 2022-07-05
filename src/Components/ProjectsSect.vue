@@ -15,9 +15,10 @@
             <span v-else>{{ project.title }}</span>
           </h4>
           <div class="d-flex">
-            <p style="width: 75%" v-for="line in project.description.split('\n\n')">
-              {{ line }}
-            </p>
+            <div>
+              <p style="width: 75%" v-for="line in project.description.split('\n\n')" v-html="line">
+              </p>
+            </div>
             <div style="width: 25%" class="mx-3 tech-used">
               <h5 class="pl-2">Tech Used</h5>
               <ul>

@@ -1,5 +1,37 @@
 colRatio: !!str 5:7
 experiences:
+  - title: !!str Amazon.com
+    roles:
+      - position: !!str Game Services Engineer
+        roleid: !!str L5
+        tenure: !!str July 2022 - Current
+    description: !!str |
+      Working on New World game services.
+
+    tech:
+      - AWS
+      - JS
+      - C++
+
+  - title: !!str Playdots Inc
+    roles:
+      - position: !!str Sr. Backend Engineer
+        tenure: !!str October 2021 - June 2022
+    description: !!str |
+      In my first couple of months at Dots, I managed to quickly accelerate in-flight plans to migrate the CICD pipeline from Jenkins to Github Actions. I was able to bring my previous experiences using the platform to help implement the entire Continuous Integration pipeline while assisting other engineers implement the Continuous Delivery portion. Over the rest of my time at Dots I continued implementing many Quality of Life features and improvements while also ensuring to refactor and utilize new Github Actions features as they were released.
+
+      In the following months, my work primarily consisted of improving and overhauling the internal game and liveop services configuration webapp. Having grown rapidly in the past couple years, the complexity of managing their various game configurations resulted in a difficult-to-use tool for operators. Working with various key stakeholders, I was the primary engineer tasked with implementing an overhauled webapp while also migrating from Vue to Angular.
+
+    tech:
+      - AWS
+      - Python
+      - AngularJS
+      - Bash
+      - Github Actions
+      - Jenkins
+      - Docker
+      - Kubernetes
+
   - title: !!str Etsy Inc
     roles:
       - position: !!str Software Engineer Intern
