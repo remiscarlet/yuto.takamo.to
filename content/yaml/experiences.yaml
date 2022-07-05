@@ -1,6 +1,7 @@
 colRatio: !!str 5:7
 experiences:
   - title: !!str Amazon.com
+    link: !!str https://www.amazongames.com/
     roles:
       - position: !!str Game Services Engineer
         roleid: !!str L5
@@ -14,6 +15,7 @@ experiences:
       - C++
 
   - title: !!str Playdots Inc
+    link: !!str https://www.dots.co/
     roles:
       - position: !!str Sr. Backend Engineer
         tenure: !!str October 2021 - June 2022
@@ -33,6 +35,7 @@ experiences:
       - Kubernetes
 
   - title: !!str Etsy Inc
+    link: !!str https://www.etsy.com
     roles:
       - position: !!str Software Engineer Intern
         isintern: !!bool true
