@@ -9,23 +9,33 @@
     </b-row>
     <b-row>
       <b-col class="pl-4">
-        <div v-for="project in projects" v-bind:key="project.title" class="mt-3">
+        <div
+          v-for="project in projects"
+          v-bind:key="project.title"
+          class="mt-3"
+        >
           <h4>
-            <a v-if="project.link" v-bind:href="project.link" target="_blank">{{ project.title }}</a>
+            <a v-if="project.link" v-bind:href="project.link" target="_blank">{{
+              project.title
+            }}</a>
             <span v-else>{{ project.title }}</span>
           </h4>
-          <div class="d-flex">
-            <div>
-              <p style="width: 75%" v-for="line in project.description.split('\n\n')" v-html="line">
-              </p>
-            </div>
-            <div style="width: 25%" class="mx-3 tech-used">
-              <h5 class="pl-2">Tech Used</h5>
-              <ul>
-                <li v-for="line in project.tech">
-                  {{ line }}
-                </li>
-              </ul>
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <p
+                  v-for="line in project.description.split('\n\n')"
+                  v-html="line"
+                ></p>
+              </div>
+              <div class="col-4 tech-used">
+                <h5 class="pl-2">Tech Used</h5>
+                <ul>
+                  <li v-for="line in project.tech">
+                    {{ line }}
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -34,8 +44,8 @@
   </b-container>
 </template>
 <script lang="ts">
-import { Component, Prop, Watch, Vue } from 'vue-property-decorator';
-import { BContainer, BRow, BCol } from 'bootstrap-vue';
+import { Component, Prop, Watch, Vue } from "vue-property-decorator";
+import { BContainer, BRow, BCol } from "bootstrap-vue";
 
 @Component({
   components: {
@@ -51,8 +61,7 @@ export default class ProjectsSect extends Vue {
   created() {
     console.log(this.projects);
   }
-};
-
+}
 </script>
 <style lang="scss" scoped>
 .tech-used {
@@ -61,4 +70,4 @@ export default class ProjectsSect extends Vue {
 p {
   font-size: 0.75em;
 }
- </style>
+</style>
