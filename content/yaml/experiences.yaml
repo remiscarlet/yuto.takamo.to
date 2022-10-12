@@ -7,10 +7,10 @@ experiences:
         roleid: !!str L5
         tenure: !!str July 2022 - Current
     description: !!str |
-      Working on New World game services.
+    Working on New World game services. I currently help the team build and support new and existing features while also leading redesign efforts for various infrastructure limitations. In particular, my primary focus is to refactor our monolithic deployment pipelines using AWS CDK with Cloudformation stacks.
     tech:
-      - AWS
-      - JS
+      - AWS (Cloudformation, Lambda, Api Gateway, Dynamo DB, IAM)
+      - JS/TS + AWS CDK
       - C++
   - title: !!str Playdots Inc
     link: !!str https://www.dots.co/

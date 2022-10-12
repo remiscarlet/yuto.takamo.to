@@ -1,7 +1,20 @@
 colRatio: !!str 6:6
 sects:
 
-  - sectTitle: !!str Finished/Mature Projects
+  - sectTitle: !!str In-Flight Projects
+    projects:
+      - title: !!str Yukkuricraft Server 2.0
+        link: !!str https://github.com/Yukkuricraft/
+        description: !!str |
+          My currently solo efforts to completely overhaul and modernize the entire software infrastructure of Yukkuricraft, the Minecraft and gaming community I manage and host. In these efforts, I'm converting the traditional monohost manually configured setup to a containerized and modernized server with a full suite of web-based management tools to take advantage of the new features being implemented; Particularly helpful is the ability to spawn/destroy new 'environments' at will which create fully configurable separate servers and various tools to manage and cross-sync their configs.
+        tech:
+          - Python (Flask, SocketIO, Gevent, Gunicorn)
+          - TS (AngularJS, ngrx/rxjs, Google SocketIO, Xterm.js)
+          - Docker
+          - Liberally applied Makefiles
+          - Nginx
+
+  - sectTitle: !!str Other Projects
     projects:
       - title: !!str yuto.takamo.to
         link: !!str https://github.com/remiscarlet/yuto.takamo.to
@@ -36,15 +49,6 @@ sects:
           - GCP (GCE, GCR, Cloud SQL & DNS)
           - Github Actions
           - Terraform
-  - sectTitle: !!str In-Flight Projects
-    projects:
-      - title: !!str py-curses_space-invaders
-        link: !!str https://github.com/remiscarlet/py-curses_space-invaders
-        description: !!str |
-          A fun little commandline Space Invaders written using python standard libraries only. This was started as part of my submitted code sample for joining the Recurse Center which I participated in during the 2021 Summer1 Batch. The submission was intentionally incomplete as the task was to work on the project as part of a "pair programming task" as part of the interview.
-        tech:
-          - Python3
-          - curses
       - title: !!str TDRPG
         link: !!str https://github.com/remiscarlet/TDRPG
         description: !!str |
@@ -57,6 +61,29 @@ sects:
           A Unity project to try and create a full-featured rhythm game including playback, editors, importing, and possibly a note chart generator.
         tech:
           - Unity
+      - title: !!str py-curses_space-invaders
+        link: !!str https://github.com/remiscarlet/py-curses_space-invaders
+        description: !!str |
+          A fun little commandline Space Invaders written using python standard libraries only. This was started as part of my submitted code sample for joining the Recurse Center which I participated in during the 2021 Summer1 Batch. The submission was intentionally incomplete as the task was to work on the project as part of a "pair programming task" as part of the interview.
+        tech:
+          - Python3
+          - curses
+      - title: !!str Water Emblem
+        link: !!str https://github.com/remiscarlet/WaterEmblem
+        description: !!str |
+          This was a game project using python and pygame to create a Fire Emblem/Advance Wars-esque top-down grid-based strategy game. The idea was to make this as a fan-derivative game of the Japanese game called Kantai Collection by using characters from that game. While the project is abandoned, a good chunk of the game's framework was finished and had a playable demo which had friendly and enemy units, battle animations, fog of war, and other game mechanics.
+        tech:
+          - Python2
+          - PyGame
+      - title: !!str Blook
+        link: !!str https://github.com/remiscarlet/Blook
+        description: !!str |
+          A VR rhythm game built in 24 hours with friends from undergrad at Unhackathon 2014. This project won us recognition with several awards at the event. Gameplay uses your body to strike blocks that fly in your direction based on the music. Mechanics were influenced by Jubeat by Konami.
+        tech:
+          - Python2
+          - Unity
+
+
   - sectTitle: !!str Scripts and Tools
     projects:
       - title: !!str Elite Dangerous Arduino Controller Code
@@ -72,19 +99,4 @@ sects:
           This is a simple javascript app that you can run in your browser (I use a Chrome extension called CJS). Evike, an online airsoft retailer, has occasional events where they sell limited-quantity "Box of Awesome"s which are essentially grab bags. Due to the limited quantity and poularity of the item, it can be extremely difficult to buy these, so I wrote this sniper to automatically buy BoAs.
         tech:
           - Javascript
-  - sectTitle: !!str Abandoned Projects
-    projects:
-      - title: !!str Water Emblem
-        link: !!str https://github.com/remiscarlet/WaterEmblem
-        description: !!str |
-          This was a game project using python and pygame to create a Fire Emblem/Advance Wars-esque top-down grid-based strategy game. The idea was to make this as a fan-derivative game of the Japanese game called Kantai Collection by using characters from that game. While the project is abandoned, a good chunk of the game's framework was finished and had a playable demo which had friendly and enemy units, battle animations, fog of war, and other game mechanics.
-        tech:
-          - Python2
-          - PyGame
-      - title: !!str Blook
-        link: !!str https://github.com/remiscarlet/Blook
-        description: !!str |
-          A VR rhythm game built in 24 hours with friends from undergrad at Unhackathon 2014. This project won us recognition with several awards at the event. Gameplay uses your body to strike blocks that fly in your direction based on the music. Mechanics were influenced by Jubeat by Konami.
-        tech:
-          - Python2
-          - Unity
+
