@@ -22,7 +22,7 @@
           </h4>
           <div class="container">
             <div class="row">
-              <div class="col-6">
+              <div class="col-8">
                 <p
                   v-for="line in project.description.split('\n\n')"
                   v-html="line"

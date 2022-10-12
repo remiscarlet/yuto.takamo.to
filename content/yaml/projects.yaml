@@ -1,6 +1,5 @@
 colRatio: !!str 6:6
 sects:
-
   - sectTitle: !!str In-Flight Projects
     projects:
       - title: !!str Yukkuricraft Server 2.0
@@ -9,7 +8,7 @@ sects:
           My currently solo efforts to completely overhaul and modernize the entire software infrastructure of Yukkuricraft, the Minecraft and gaming community I manage and host. In these efforts, I'm converting the traditional monohost manually configured setup to a containerized and modernized server with a full suite of web-based management tools to take advantage of the new features being implemented; Particularly helpful is the ability to spawn/destroy new 'environments' at will which create fully configurable separate servers and various tools to manage and cross-sync their configs.
         tech:
           - Python (Flask, SocketIO, Gevent, Gunicorn)
-          - TS (AngularJS, ngrx/rxjs, Google SocketIO, Xterm.js)
+          - TS (AngularJS, ngrx/rxjs, OAuth2, SocketIO, Xterm.js, Monaco-Editor)
           - Docker
           - Liberally applied Makefiles
           - Nginx
@@ -83,7 +82,6 @@ sects:
           - Python2
           - Unity
 
-
   - sectTitle: !!str Scripts and Tools
     projects:
       - title: !!str Elite Dangerous Arduino Controller Code
@@ -99,4 +97,3 @@ sects:
           This is a simple javascript app that you can run in your browser (I use a Chrome extension called CJS). Evike, an online airsoft retailer, has occasional events where they sell limited-quantity "Box of Awesome"s which are essentially grab bags. Due to the limited quantity and poularity of the item, it can be extremely difficult to buy these, so I wrote this sniper to automatically buy BoAs.
         tech:
           - Javascript
-
