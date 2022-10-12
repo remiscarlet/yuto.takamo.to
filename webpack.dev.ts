@@ -18,7 +18,7 @@ const config: Configuration = {
     },
     compress: true,
     public: 'remi.takamo.to',
-    port: 8001,
+    port: 8080,
   },
 };
 
