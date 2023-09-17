@@ -7,10 +7,14 @@ experiences:
         roleid: !!str L5
         tenure: !!str July 2022 - Current
     description: !!str |
-      Working on New World game services. I currently help the team build and support new and existing features while also leading redesign efforts for various infrastructure limitations. My primary focus is to refactor our monolithic deployment pipelines using AWS CDK with Cloudformation stacks.
+      Working on New World game services. Primarily focused on data-intensive high-availability core backend game systems.
+
+      Some highlighted projects include implementing a new inventory system backend, assisting with a new matchmaking service backend, and designing a new player trading backend.
+
     tech:
-      - AWS (Cloudformation, Lambda, Api Gateway, Dynamo DB, IAM)
+      - AWS (Cloudformation, Lambda, Api Gateway, RDS, Dynamo DB, IAM, SecretsManager, SSM, Fargate, EC2)
       - JS/TS + AWS CDK
+      - Python
       - C++
   - title: !!str Playdots Inc
     link: !!str https://www.dots.co/

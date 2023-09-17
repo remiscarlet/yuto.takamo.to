@@ -1,15 +1,19 @@
 {
+  "include": [
+    "src/**/*",
+  ],
   "compilerOptions": {
     "outDir": "./dist/",
     "noImplicitAny": true,
     "noImplicitThis": true,
     "noImplicitReturns": true,
     "module": "CommonJS",
-    "target": "es5",
+    "target": "es6",
     "jsx": "react",
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "skipLibCheck": true
   }
 }

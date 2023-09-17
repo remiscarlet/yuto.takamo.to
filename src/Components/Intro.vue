@@ -7,7 +7,7 @@
         </h3>
           <h1 class="text-center my-3">Software Engineer,<br />Creative,<br />Huge Nerd</h1>
         <p class="text-center lead my-3">
-        Sup, I’m Yuto. I’m an engineer with industry experience in web and cloud technologies, systems administration and automation, and CICD pipeline configuration. I'm a guy with a healthy interest in new and exciting technologies, a love for teaching others, and a drive for making an impact wherever I go. I believe that the rate of change in the technology industry only accelerates as time goes on and that my love for learning only serves to position me for success.
+        Sup, I’m Yuto. I’m an engineer with industry experience in web and cloud technologies, along with systems administration and automation. I have a healthy interest in new and exciting technologies, a love for teaching others, and a drive for making an impact wherever I go.
         </p>
       </b-col>
     </b-row>
